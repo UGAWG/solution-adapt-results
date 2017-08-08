@@ -1,2 +1,19 @@
 # solution-adapt-results
 The results to match the inputs in solution-adapt-cases
+
+# metric.solb convention
+
+
+The metric .solb files follow the convention on page 8 of
+https://hal.inria.fr/inria-00363007/document
+which is row-wise for lower triangle matrix. Where a row in
+the .solb file
+```
+f1 f2 f3 f4 f5 f6
+```
+corresponds the the metric at the vertex as
+```
+    f1 f2 f4
+M = f2 f3 f5
+    f4 f5 f6
+```
