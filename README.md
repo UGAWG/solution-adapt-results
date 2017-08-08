@@ -12,7 +12,7 @@ the .solb file
 ```
 f1 f2 f3 f4 f5 f6
 ```
-corresponds the the metric at the vertex as
+corresponds to the 3x3 symmetric metric at the vertex
 ```
     f1 f2 f4
 M = f2 f3 f5
