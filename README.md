@@ -5,7 +5,7 @@ The results to match the inputs in solution-adapt-cases
 
 
 The metric .solb files follow the convention on page 8 of
-https://hal.inria.fr/inria-00363007/document
+the [Metrix User Guide](https://hal.inria.fr/inria-00363007/document)
 which is row-wise for lower triangle matrix. Where a row in
 the .solb file
 ```
