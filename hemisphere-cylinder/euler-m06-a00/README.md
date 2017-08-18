@@ -13,17 +13,17 @@ https://github.com/UGAWG/solution-adapt-cases/tree/master/hemisphere-cylinder/ge
 
 Grid and geometry association
 
-- Vertices : 59178 item
-- Edges : 300 item
-- Triangles : 14020 item
-- Tetrahedra : 322237 item
+- Vertices : 50702 item
+- Edges : 243 item
+- Triangles : 9266 item
+- Tetrahedra : 292019 item
 - VerticesOnGeometricVertices : 7 item
-- VerticesOnGeometricEdges : 310 item
-- VerticesOnGeometricTriangles : 7315 item
+- VerticesOnGeometricEdges : 253 item
+- VerticesOnGeometricTriangles : 4881 item
 
 # hsc04-metric.solb
 
-SolAtVertices : 59178 item
+- SolAtVertices : 50702 item
 
 # hsc04-mach.solb
 
@@ -35,5 +35,7 @@ Mach number computed by FUN3D
 - target complexity  40000
 - geometry constraints included (increasing complexity)
 
-SolAtVertices : 59178 item
+- SolAtVertices : 50702 item
+
+
 
