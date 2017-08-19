@@ -29,3 +29,6 @@ The following files are :
 * wolf-fefloa-p1-c40000.solb               : mach number
 * hemi-back.[meshb/solb]     : background surface mesh and curvature-based metric
 * hemi-coarse.meshb          : initial coarse mesh used for adaptation
+
+
+The mesh is composed of 83912 vertices, 19622 triangles and 476350 tetrahedra
