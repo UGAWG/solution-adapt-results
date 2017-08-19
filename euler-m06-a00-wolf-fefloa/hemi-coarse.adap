@@ -1,0 +1,6 @@
+  complexity=(40000)
+  step=(       4 )
+  field=mach
+  p=1
+  opt_fefloa=" -back hemi-back-met  -inv-back -nordg -hgrad 1.3 -cad hemisph-cyl.igs  "
+  opt_wolf=" -nproc 0 "
