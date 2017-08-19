@@ -17,8 +17,8 @@
   schedule_cfl       = 1.0 100.0
 /
 &code_run_control
-  steps              = 500
-  stopping_tolerance = 1.0e-11
+  steps              = 5000
+  stopping_tolerance = 1.0e-14
   restart_read       = 'off'
 /
 &linear_solver_parameters
