@@ -37,3 +37,12 @@ Mach number computed by FUN3D
 
 - SolAtVertices : 50702 item
 
+# hemicyl_curvAdapt-mach.solb hemicyl_curvAdapt-metric.solb hsc-gmsh-26-mach.solb hsc-gmsh-26-metric.solb
+
+Mach number computed by FUN3D
+- Lp (p=1) Mach metric
+- aspect ratio limited to 10-1
+- gradation limited to 1.3
+- hessian on boundary averaged from interior
+- geometry constraints not applied
+- target complexity 10000
