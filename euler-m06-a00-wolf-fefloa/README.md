@@ -21,7 +21,7 @@ use
 EG_invEvaluateGuess
 ```
 
-The following files are : 
+The following files are obtained after 4th iteration at a target complexity of 40000 in L1 norm : 
 * wolf-fefloa-p1-c40000.hessian.solb : hessian
 * wolf-fefloa-p1-c40000.meshb        : final mesh
 * wolf-fefloa-p1-c40000.metric-grad.solb   : final metric after gradation and intersection with the curvature metric
