@@ -28,7 +28,7 @@ Grid and geometry association
 # hsc01-mach.solb
 
 Mach number computed by FUN3D
-- Lp (p=1) Mach metric
+- Lp (p=2) Mach metric
 - aspect ratio limited to 10-1
 - gradation limited to 1.3
 - hessian on boundary averaged from interior
@@ -40,7 +40,7 @@ Mach number computed by FUN3D
 # hemicyl_curvAdapt-mach.solb hemicyl_curvAdapt-metric.solb hsc-gmsh-26-mach.solb hsc-gmsh-26-metric.solb
 
 Mach number computed by FUN3D
-- Lp (p=1) Mach metric
+- Lp (p=2) Mach metric
 - aspect ratio limited to 10-1
 - gradation limited to 1.3
 - hessian on boundary averaged from interior
