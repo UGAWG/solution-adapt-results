@@ -16,5 +16,5 @@ Mach number computed by FUN3D
 - aspect ratio limited to 10-1
 - gradation limited to 1.5
 - hessian on boundary averaged from interior
-- geometry constraints applied
-- target complexity 10000
+- geometry constraints applied (10 points per radian, gradation limited to 1.5)
+- target complexity 10000 (higher due to addition of geometry constraints)
