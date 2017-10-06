@@ -29,17 +29,17 @@ Metric and Mach number computed by FUN3D
 - geometry constraints included (10 points per radian)
 - target complexity 30000 (slightly higher due to geometry constraints)
 
-# hsc20.meshb hsc20-mach.solb hsc20-metric.solb
+# hsc10.meshb hsc10-mach.solb hsc10-metric.solb
 
 Grid and geometry association
 
-- Vertices : 423250 item
-- Edges : 620 item
-- Triangles : 59692 item
-- Tetrahedra : 2346104 item
+- Vertices : 207825 item
+- Edges : 482 item
+- Triangles : 31178 item
+- Tetrahedra : 1151530 item
 - VerticesOnGeometricVertices : 7 item
-- VerticesOnGeometricEdges : 630 item
-- VerticesOnGeometricTriangles : 30471 item
+- VerticesOnGeometricEdges : 492 item
+- VerticesOnGeometricTriangles : 16076 item
 
 Metric and Mach number computed by FUN3D
 - Lp (p=2) Mach metric
@@ -47,5 +47,4 @@ Metric and Mach number computed by FUN3D
 - gradation limited to 1.5
 - hessian on boundary averaged from interior
 - geometry constraints included (10 points per radian)
-- target complexity 200000 (slightly higher due to geometry constraints)
-- SolAtVertices : 423250 item
+- target complexity 100000 (slightly higher due to geometry constraints)
