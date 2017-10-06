@@ -27,15 +27,15 @@ Mach number computed by FUN3D
 - geometry constraints applied (10 points per radian, gradation limited to 1.5)
 - target complexity 30000 (higher due to addition of geometry constraints)
 
-# onera20.meshb onera20-mach.solb onera20-metric.solb
+# onera10.meshb onera10-mach.solb onera10-metric.solb
 
-- Vertices : 419072 item
-- Edges : 763 item
-- Triangles : 53112 item
-- Tetrahedra : 2341981 item
+- Vertices : 195271 item
+- Edges : 585 item
+- Triangles : 28024 item
+- Tetrahedra : 1085770 item
 - VerticesOnGeometricVertices : 14 item
-- VerticesOnGeometricEdges : 786 item
-- VerticesOnGeometricTriangles : 27330 item
+- VerticesOnGeometricEdges : 608 item
+- VerticesOnGeometricTriangles : 14608 item
 
 Mach number computed by FUN3D
 - Lp (p=2) Mach metric
@@ -43,4 +43,4 @@ Mach number computed by FUN3D
 - gradation limited to 1.5
 - hessian on boundary averaged from interior
 - geometry constraints applied (10 points per radian, gradation limited to 1.5)
-- target complexity 200000 (higher due to addition of geometry constraints)
+- target complexity 100000 (higher due to addition of geometry constraints)
