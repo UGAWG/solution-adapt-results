@@ -1,7 +1,7 @@
 
 # Case Description
 
-Mach 0.6, Angle of Attack 0, Fully-Turbulent SA RANS
+Mach 0.6, Angle of Attack 0, Fully-Turbulent SA RANS, 0.35 million Reynolds number based on diameter, reference temperature 540 degrees Rankine
 
 https://github.com/UGAWG/solution-adapt-cases/blob/master/hemisphere-cylinder/README.md
 
