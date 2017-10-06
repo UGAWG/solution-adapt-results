@@ -9,7 +9,7 @@ https://github.com/UGAWG/solution-adapt-cases/blob/master/hemisphere-cylinder/RE
 
 https://github.com/UGAWG/solution-adapt-cases/tree/master/hemisphere-cylinder/geometry
 
-# hsc03.meshb
+# hsc03.meshb hsc03-mach.solb hsc03-metric.solb
 
 Grid and geometry association
 
@@ -21,24 +21,15 @@ Grid and geometry association
 - VerticesOnGeometricEdges : 296 item
 - VerticesOnGeometricTriangles : 6402 item
 
-# hsc03-mach.solb
-
-Mach number computed by FUN3D
-
-- SolAtVertices : 45343 item
-
-# hsc03-metric.solb
-
-Metric number computed by FUN3D
+Metric and Mach number computed by FUN3D
 - Lp (p=2) Mach metric
 - aspect ratio limited to 1000-1
 - gradation limited to 1.5
 - hessian on boundary averaged from interior
 - geometry constraints included (10 points per radian)
 - target complexity 30000 (slightly higher due to geometry constraints)
-- SolAtVertices : 45343 item
 
-# hsc20.meshb
+# hsc20.meshb hsc20-mach.solb hsc20-metric.solb
 
 Grid and geometry association
 
@@ -50,15 +41,7 @@ Grid and geometry association
 - VerticesOnGeometricEdges : 630 item
 - VerticesOnGeometricTriangles : 30471 item
 
-# hsc20-mach.solb
-
-Mach number computed by FUN3D
-
-- SolAtVertices : 423250 item
-
-# hsc20-metric.solb
-
-Metric number computed by FUN3D
+Metric and Mach number computed by FUN3D
 - Lp (p=2) Mach metric
 - aspect ratio limited to 1000-1
 - gradation limited to 1.5
