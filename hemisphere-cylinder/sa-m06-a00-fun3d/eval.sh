@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-background=$0
-target=$1
+set -u
+set -e
+set -x
+
+background=$1
+target=$2
 
 transmesh ../${background}-metric.solb ${background}-metric.sol
 
