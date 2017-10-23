@@ -7,9 +7,9 @@ set -x
 rootout=out
 
 rm -rf refine-rev-faceid
-mkdir refine-ref-faceid
+mkdir refine-rev-faceid
 
-cd refine-ref-faceid
+cd refine-rev-faceid
 
 transmesh ../oneram6_a3p06.metnode.solb oneram6_a3p06-metric.sol
 
