@@ -1,5 +1,5 @@
-reading in hsc03.meshb
-reading in hsc03-metric.solb
+reading in ../hsc03.meshb
+reading in ../hsc03-metric.solb
 writing out loaded.vtu
 reading in /home/daibane/src/solution-adapt-cases/hemisphere-cylinder/geometry/hemisph-cyl.egads
 computing implied metric tag
@@ -81,7 +81,11 @@ coarsening 7 vertices
 coarsening 5 vertices
 291498 tets, quality [0.16,1.00], 273 in [0.16,0.26], 291225 >0.26
 352940 edges, length [0.25,1.94], 15103 <0.71, 337819 in [0.71,1.41], 18 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.4338 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1085 iterations
+Solving Laplacian of warp field took 15.956 seconds
 addressing element qualities
 swapping 10052 3D edges
 292410 tets, quality [0.16,1.00], 29 in [0.16,0.26], 292381 >0.26
@@ -118,9 +122,9 @@ length histogram:
 2.10-2.40: 1
 2.40-2.70: 0
 2.70-3.00: 0
-addressing edge lengths took 10.4427 seconds
-snapping while addressing element qualities took 22.6128 seconds
-adapting took 33.158 seconds
+addressing edge lengths took 9.23401 seconds
+snapping while addressing element qualities took 20.8476 seconds
+adapting took 30.1566 seconds
 
 computing minimum quality right after adapt
 minimum quality 0.259957
@@ -170,7 +174,11 @@ refining 1 edges
 coarsening 23 vertices
 291465 tets, quality [0.26,1.00], 393 in [0.26,0.36], 291072 >0.36
 352736 edges, length [0.27,1.74], 14517 <0.71, 338212 in [0.71,1.41], 7 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.42861 seconds
+Solving Laplacian of warp field...
 laplacian solve took 75 iterations
+Solving Laplacian of warp field took 1.10842 seconds
 addressing element qualities
 swapping 8470 3D edges
 291989 tets, quality [0.26,1.00], 46 in [0.26,0.36], 291943 >0.36
@@ -218,9 +226,9 @@ length histogram:
 2.10-2.40: 0
 2.40-2.70: 0
 2.70-3.00: 0
-addressing edge lengths took 3.3579 seconds
-snapping while addressing element qualities took 8.64998 seconds
-adapting took 12.0595 seconds
+addressing edge lengths took 3.27807 seconds
+snapping while addressing element qualities took 8.38592 seconds
+adapting took 11.7158 seconds
 
 computing minimum quality right after adapt
 minimum quality 0.361302
@@ -282,7 +290,11 @@ coarsening 2 vertices
 coarsening 1 vertices
 291740 tets, quality [0.36,1.00], 790 in [0.36,0.46], 290950 >0.46
 353002 edges, length [0.27,1.74], 14418 <0.71, 338567 in [0.71,1.41], 17 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.43379 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1 iterations
+Solving Laplacian of warp field took 0.0186959 seconds
 addressing element qualities
 swapping 7590 3D edges
 292250 tets, quality [0.37,1.00], 154 in [0.36,0.46], 292096 >0.46
@@ -367,9 +379,9 @@ length histogram:
 2.10-2.40: 16
 2.40-2.70: 1
 2.70-3.00: 0
-addressing edge lengths took 5.68729 seconds
-snapping while addressing element qualities took 18.4275 seconds
-adapting took 24.1646 seconds
+addressing edge lengths took 5.62276 seconds
+snapping while addressing element qualities took 17.5062 seconds
+adapting took 23.1802 seconds
 
 computing minimum quality right after adapt
 minimum quality 0.410819
@@ -431,7 +443,11 @@ coarsening 10 vertices
 coarsening 2 vertices
 292095 tets, quality [0.41,1.00], 1215 in [0.41,0.51], 290880 >0.51
 353402 edges, length [0.27,2.20], 14546 <0.71, 338762 in [0.71,1.41], 94 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.4258 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1120 iterations
+Solving Laplacian of warp field took 16.4215 seconds
 addressing element qualities
 swapping 6581 3D edges
 292744 tets, quality [0.41,1.00], 378 in [0.41,0.51], 292366 >0.51
@@ -531,9 +547,9 @@ length histogram:
 2.10-2.40: 9
 2.40-2.70: 0
 2.70-3.00: 0
-addressing edge lengths took 5.72773 seconds
-snapping while addressing element qualities took 47.349 seconds
-adapting took 53.1255 seconds
+addressing edge lengths took 5.40168 seconds
+snapping while addressing element qualities took 45.4634 seconds
+adapting took 50.9132 seconds
 
 computing minimum quality right after adapt
 minimum quality 0.410819
@@ -598,7 +614,11 @@ coarsening 24 vertices
 coarsening 6 vertices
 291869 tets, quality [0.41,1.00], 1104 in [0.41,0.51], 290765 >0.51
 353118 edges, length [0.34,2.00], 14620 <0.71, 338384 in [0.71,1.41], 114 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.41782 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1182 iterations
+Solving Laplacian of warp field took 17.2461 seconds
 addressing element qualities
 swapping 6563 3D edges
 292736 tets, quality [0.41,1.00], 246 in [0.41,0.51], 292490 >0.51
@@ -701,9 +721,9 @@ length histogram:
 2.10-2.40: 5
 2.40-2.70: 0
 2.70-3.00: 0
-addressing edge lengths took 6.27757 seconds
-snapping while addressing element qualities took 47.4566 seconds
-adapting took 53.7833 seconds
+addressing edge lengths took 5.97239 seconds
+snapping while addressing element qualities took 45.1111 seconds
+adapting took 51.1314 seconds
 
 computing minimum quality right after adapt
 minimum quality 0.410819
@@ -771,7 +791,11 @@ coarsening 4 vertices
 coarsening 1 vertices
 292190 tets, quality [0.41,1.00], 905 in [0.41,0.51], 291285 >0.51
 353392 edges, length [0.34,2.08], 14519 <0.71, 338798 in [0.71,1.41], 75 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.43518 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1153 iterations
+Solving Laplacian of warp field took 16.9677 seconds
 addressing element qualities
 swapping 5407 3D edges
 292634 tets, quality [0.41,1.00], 190 in [0.41,0.51], 292444 >0.51
@@ -868,13 +892,14 @@ length histogram:
 2.10-2.40: 1
 2.40-2.70: 0
 2.70-3.00: 0
-addressing edge lengths took 6.80649 seconds
-snapping while addressing element qualities took 43.2528 seconds
-adapting took 50.1138 seconds
+addressing edge lengths took 6.35227 seconds
+snapping while addressing element qualities took 41.8839 seconds
+adapting took 48.2855 seconds
 
 computing minimum quality right after adapt
 minimum quality 0.410819
 old minimum quality 0.410819
+fixing the mesh took 217.002 seconds
 writing out fixed.vtu
 limiting gradation on UGAWG metric, setting as target
 limited gradation in 4 steps
@@ -882,6 +907,28 @@ writing out before_adapt.vtu
 before adapting:
 286327 tets, quality [0.32,1.00], 286327 >0.30
 346044 edges, length [0.33,2.44], 23924 <0.71, 307995 in [0.71,1.41], 14125 >1.41
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 24
+0.40-0.50: 497
+0.50-0.60: 6221
+0.60-0.70: 33224
+0.70-0.80: 84998
+0.80-0.90: 109849
+0.90-1.00: 51514
+length histogram:
+0.00-0.30: 0
+0.30-0.60: 4472
+0.60-0.90: 99338
+0.90-1.20: 164850
+1.20-1.50: 71047
+1.50-1.80: 6010
+1.80-2.10: 305
+2.10-2.40: 20
+2.40-2.70: 2
+2.70-3.00: 0
 addressing edge lengths
 refining 8956 edges
 325957 tets, quality [0.23,1.00], 6 in [0.20,0.30], 325951 >0.30
@@ -919,7 +966,11 @@ coarsening 7 vertices
 coarsening 3 vertices
 293402 tets, quality [0.20,1.00], 385 in [0.20,0.30], 293017 >0.30
 354158 edges, length [0.29,2.42], 19399 <0.71, 334745 in [0.71,1.41], 14 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.39715 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1309 iterations
+Solving Laplacian of warp field took 19.1043 seconds
 addressing element qualities
 swapping 2344 3D edges
 293386 tets, quality [0.21,1.00], 27 in [0.20,0.30], 293359 >0.30
@@ -933,13 +984,57 @@ swapping 10 3D edges
 coarsening 2 vertices
 293357 tets, quality [0.30,1.00], 293357 >0.30
 354110 edges, length [0.27,1.96], 19467 <0.71, 334019 in [0.71,1.41], 624 >1.41
-addressing edge lengths took 7.61659 seconds
-snapping while addressing element qualities took 24.1713 seconds
-adapting took 31.7911 seconds
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 628
+0.40-0.50: 1710
+0.50-0.60: 7512
+0.60-0.70: 31942
+0.70-0.80: 81689
+0.80-0.90: 113419
+0.90-1.00: 56457
+length histogram:
+0.00-0.30: 1
+0.30-0.60: 3371
+0.60-0.90: 100467
+0.90-1.20: 173437
+1.20-1.50: 76582
+1.50-1.80: 248
+1.80-2.10: 4
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
+addressing edge lengths took 7.84904 seconds
+snapping while addressing element qualities took 22.8239 seconds
+adapting took 30.723 seconds
 
 before adapting:
 293357 tets, quality [0.20,1.00], 86 in [0.20,0.30], 293271 >0.30
 354110 edges, length [0.27,2.05], 25443 <0.71, 315292 in [0.71,1.41], 13375 >1.41
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 86
+0.30-0.40: 842
+0.40-0.50: 3082
+0.50-0.60: 12815
+0.60-0.70: 39937
+0.70-0.80: 82707
+0.80-0.90: 105050
+0.90-1.00: 48838
+length histogram:
+0.00-0.30: 4
+0.30-0.60: 6057
+0.60-0.90: 107132
+0.90-1.20: 162109
+1.20-1.50: 74467
+1.50-1.80: 4317
+1.80-2.10: 24
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
 addressing edge lengths
 refining 8751 edges
 333121 tets, quality [0.20,1.00], 129 in [0.20,0.30], 332992 >0.30
@@ -980,7 +1075,11 @@ coarsening 5 vertices
 coarsening 1 vertices
 302800 tets, quality [0.20,1.00], 547 in [0.20,0.30], 302253 >0.30
 364954 edges, length [0.28,1.67], 24934 <0.71, 340005 in [0.71,1.41], 15 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.43001 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1131 iterations
+Solving Laplacian of warp field took 17.1822 seconds
 addressing element qualities
 swapping 4009 3D edges
 302728 tets, quality [0.21,1.00], 47 in [0.20,0.30], 302681 >0.30
@@ -998,13 +1097,57 @@ addressing element qualities
 swapping 7 3D edges
 302704 tets, quality [0.30,1.00], 302704 >0.30
 364858 edges, length [0.28,1.96], 24987 <0.71, 339005 in [0.71,1.41], 866 >1.41
-addressing edge lengths took 8.34319 seconds
-snapping while addressing element qualities took 22.8593 seconds
-adapting took 31.2059 seconds
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 1026
+0.40-0.50: 2959
+0.50-0.60: 11445
+0.60-0.70: 38875
+0.70-0.80: 85191
+0.80-0.90: 110952
+0.90-1.00: 52256
+length histogram:
+0.00-0.30: 2
+0.30-0.60: 5477
+0.60-0.90: 111478
+0.90-1.20: 171368
+1.20-1.50: 76176
+1.50-1.80: 353
+1.80-2.10: 4
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
+addressing edge lengths took 7.9648 seconds
+snapping while addressing element qualities took 21.7907 seconds
+adapting took 29.8072 seconds
 
 before adapting:
 302704 tets, quality [0.23,1.00], 113 in [0.20,0.30], 302591 >0.30
 364858 edges, length [0.25,2.10], 28185 <0.71, 324602 in [0.71,1.41], 12071 >1.41
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 113
+0.30-0.40: 1334
+0.40-0.50: 4686
+0.50-0.60: 16241
+0.60-0.70: 45390
+0.70-0.80: 85794
+0.80-0.90: 103214
+0.90-1.00: 45932
+length histogram:
+0.00-0.30: 2
+0.30-0.60: 7696
+0.60-0.90: 112933
+0.90-1.20: 162512
+1.20-1.50: 79078
+1.50-1.80: 2619
+1.80-2.10: 17
+2.10-2.40: 1
+2.40-2.70: 0
+2.70-3.00: 0
 addressing edge lengths
 refining 8496 edges
 340845 tets, quality [0.21,1.00], 166 in [0.20,0.30], 340679 >0.30
@@ -1036,7 +1179,11 @@ coarsening 23 vertices
 coarsening 4 vertices
 310819 tets, quality [0.20,1.00], 594 in [0.20,0.30], 310225 >0.30
 374238 edges, length [0.25,1.56], 28462 <0.71, 345761 in [0.71,1.41], 15 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.44171 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1039 iterations
+Solving Laplacian of warp field took 15.9506 seconds
 addressing element qualities
 swapping 4510 3D edges
 310635 tets, quality [0.20,1.00], 72 in [0.20,0.30], 310563 >0.30
@@ -1053,13 +1200,57 @@ swapping 5 3D edges
 coarsening 5 vertices
 310529 tets, quality [0.30,1.00], 310529 >0.30
 373942 edges, length [0.25,2.07], 28516 <0.71, 344453 in [0.71,1.41], 973 >1.41
-addressing edge lengths took 6.99604 seconds
-snapping while addressing element qualities took 21.4231 seconds
-adapting took 28.4225 seconds
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 1334
+0.40-0.50: 4023
+0.50-0.60: 14417
+0.60-0.70: 43932
+0.70-0.80: 88688
+0.80-0.90: 109221
+0.90-1.00: 48914
+length histogram:
+0.00-0.30: 2
+0.30-0.60: 6964
+0.60-0.90: 118053
+0.90-1.20: 170690
+1.20-1.50: 77854
+1.50-1.80: 374
+1.80-2.10: 5
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
+addressing edge lengths took 6.55137 seconds
+snapping while addressing element qualities took 20.5305 seconds
+adapting took 27.1354 seconds
 
 before adapting:
 310529 tets, quality [0.22,1.00], 260 in [0.20,0.30], 310269 >0.30
 373942 edges, length [0.22,2.17], 33314 <0.71, 320163 in [0.71,1.41], 20465 >1.41
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 260
+0.30-0.40: 2331
+0.40-0.50: 8273
+0.50-0.60: 24373
+0.60-0.70: 53312
+0.70-0.80: 87958
+0.80-0.90: 95139
+0.90-1.00: 38883
+length histogram:
+0.00-0.30: 10
+0.30-0.60: 10864
+0.60-0.90: 114858
+0.90-1.20: 157456
+1.20-1.50: 83135
+1.50-1.80: 7545
+1.80-2.10: 73
+2.10-2.40: 1
+2.40-2.70: 0
+2.70-3.00: 0
 addressing edge lengths
 refining 12763 edges
 367553 tets, quality [0.20,1.00], 394 in [0.20,0.30], 367159 >0.30
@@ -1100,7 +1291,11 @@ coarsening 12 vertices
 coarsening 3 vertices
 327748 tets, quality [0.20,1.00], 1040 in [0.20,0.30], 326708 >0.30
 394037 edges, length [0.22,1.74], 34260 <0.71, 359749 in [0.71,1.41], 28 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.49206 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1135 iterations
+Solving Laplacian of warp field took 18.1569 seconds
 addressing element qualities
 swapping 7870 3D edges
 327235 tets, quality [0.20,1.00], 115 in [0.20,0.30], 327120 >0.30
@@ -1129,13 +1324,57 @@ swapping 6 3D edges
 swapping 2 3D edges
 327018 tets, quality [0.30,1.00], 327018 >0.30
 393274 edges, length [0.22,1.97], 34342 <0.71, 357515 in [0.71,1.41], 1417 >1.41
-addressing edge lengths took 9.53363 seconds
-snapping while addressing element qualities took 26.1065 seconds
-adapting took 35.6442 seconds
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 1830
+0.40-0.50: 5751
+0.50-0.60: 19719
+0.60-0.70: 52695
+0.70-0.80: 95216
+0.80-0.90: 107346
+0.90-1.00: 44461
+length histogram:
+0.00-0.30: 14
+0.30-0.60: 9535
+0.60-0.90: 127157
+0.90-1.20: 173238
+1.20-1.50: 82736
+1.50-1.80: 579
+1.80-2.10: 15
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
+addressing edge lengths took 9.02169 seconds
+snapping while addressing element qualities took 25.2198 seconds
+adapting took 34.2983 seconds
 
 before adapting:
 327018 tets, quality [0.23,1.00], 133 in [0.20,0.30], 326885 >0.30
 393274 edges, length [0.20,2.02], 34900 <0.71, 345724 in [0.71,1.41], 12650 >1.41
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 133
+0.30-0.40: 2352
+0.40-0.50: 7873
+0.50-0.60: 24490
+0.60-0.70: 57879
+0.70-0.80: 94282
+0.80-0.90: 100003
+0.90-1.00: 40006
+length histogram:
+0.00-0.30: 15
+0.30-0.60: 11087
+0.60-0.90: 123246
+0.90-1.20: 167365
+1.20-1.50: 89535
+1.50-1.80: 1993
+1.80-2.10: 33
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
 addressing edge lengths
 refining 9443 edges
 368875 tets, quality [0.22,1.00], 236 in [0.20,0.30], 368639 >0.30
@@ -1167,7 +1406,11 @@ coarsening 7 vertices
 coarsening 2 vertices
 335724 tets, quality [0.20,1.00], 726 in [0.20,0.30], 334998 >0.30
 403504 edges, length [0.24,1.54], 35951 <0.71, 367542 in [0.71,1.41], 11 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.5162 seconds
+Solving Laplacian of warp field...
 laplacian solve took 1300 iterations
+Solving Laplacian of warp field took 21.2521 seconds
 addressing element qualities
 swapping 5665 3D edges
 335442 tets, quality [0.20,1.00], 95 in [0.20,0.30], 335347 >0.30
@@ -1193,13 +1436,57 @@ swapping 2 3D edges
 coarsening 4 vertices
 335231 tets, quality [0.30,1.00], 335231 >0.30
 402981 edges, length [0.24,2.30], 36010 <0.71, 365692 in [0.71,1.41], 1279 >1.41
-addressing edge lengths took 7.34629 seconds
-snapping while addressing element qualities took 28.5725 seconds
-adapting took 35.9223 seconds
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 2152
+0.40-0.50: 6565
+0.50-0.60: 21975
+0.60-0.70: 56584
+0.70-0.80: 97786
+0.80-0.90: 106905
+0.90-1.00: 43264
+length histogram:
+0.00-0.30: 8
+0.30-0.60: 10064
+0.60-0.90: 130354
+0.90-1.20: 175999
+1.20-1.50: 86003
+1.50-1.80: 529
+1.80-2.10: 22
+2.10-2.40: 2
+2.40-2.70: 0
+2.70-3.00: 0
+addressing edge lengths took 7.04202 seconds
+snapping while addressing element qualities took 27.78 seconds
+adapting took 34.8809 seconds
 
 before adapting:
 335231 tets, quality [0.23,1.00], 181 in [0.20,0.30], 335050 >0.30
 402981 edges, length [0.23,2.36], 35851 <0.71, 353786 in [0.71,1.41], 13344 >1.41
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 181
+0.30-0.40: 2717
+0.40-0.50: 8887
+0.50-0.60: 26966
+0.60-0.70: 61104
+0.70-0.80: 96776
+0.80-0.90: 99828
+0.90-1.00: 38772
+length histogram:
+0.00-0.30: 15
+0.30-0.60: 11362
+0.60-0.90: 125403
+0.90-1.20: 170188
+1.20-1.50: 93927
+1.50-1.80: 2045
+1.80-2.10: 36
+2.10-2.40: 5
+2.40-2.70: 0
+2.70-3.00: 0
 addressing edge lengths
 refining 9932 edges
 379147 tets, quality [0.22,1.00], 327 in [0.20,0.30], 378820 >0.30
@@ -1234,7 +1521,11 @@ coarsening 15 vertices
 coarsening 1 vertices
 346413 tets, quality [0.20,1.00], 787 in [0.20,0.30], 345626 >0.30
 416158 edges, length [0.20,1.54], 38040 <0.71, 378109 in [0.71,1.41], 9 >1.41
+Querying closests point for surface vertices...
+Querying closests point for surface vertices took 1.52912 seconds
+Solving Laplacian of warp field...
 laplacian solve took 863 iterations
+Solving Laplacian of warp field took 14.5597 seconds
 addressing element qualities
 swapping 6010 3D edges
 346269 tets, quality [0.20,1.00], 109 in [0.20,0.30], 346160 >0.30
@@ -1260,11 +1551,34 @@ swapping 8 3D edges
 coarsening 2 vertices
 346029 tets, quality [0.30,1.00], 346029 >0.30
 415729 edges, length [0.20,2.02], 38089 <0.71, 376229 in [0.71,1.41], 1411 >1.41
-addressing edge lengths took 8.07468 seconds
-snapping while addressing element qualities took 21.9092 seconds
-adapting took 29.9877 seconds
+quality histogram:
+0.00-0.10: 0
+0.10-0.20: 0
+0.20-0.30: 0
+0.30-0.40: 2424
+0.40-0.50: 7755
+0.50-0.60: 24736
+0.60-0.70: 60715
+0.70-0.80: 100905
+0.80-0.90: 107430
+0.90-1.00: 42064
+length histogram:
+0.00-0.30: 12
+0.30-0.60: 10777
+0.60-0.90: 134611
+0.90-1.20: 179960
+1.20-1.50: 89768
+1.50-1.80: 589
+1.80-2.10: 12
+2.10-2.40: 0
+2.40-2.70: 0
+2.70-3.00: 0
+addressing edge lengths took 7.75616 seconds
+snapping while addressing element qualities took 21.219 seconds
+adapting took 29.0357 seconds
 
+adaptation to (interpolated) given metric took 190.076 seconds
 writing out adapted.vtu
-writing out omega_h/hsc03.meshb
-writing out omega_h/hsc03-metric.solb
+writing out hsc03-2.meshb
+writing out hsc03-2-metric.solb
  EGADS Info: 0 Objects, 0 Reference in Use (of 167) at Close!
