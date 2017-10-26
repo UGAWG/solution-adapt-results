@@ -38,3 +38,4 @@ rm -f lay2eps.mcr
 
 epstopdf ${eps}
 
+rm ${eps}
