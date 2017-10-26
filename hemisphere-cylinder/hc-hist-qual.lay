@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"pragmatic/hsc03_out-qual.tec" "pragmatic/hsc10_out-qual.tec" "sa-m06-a00-fun3d/omega_h/hsc03-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc03-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc10-qual.tec"'
+$!VarSet |LFDSFN1| = '"sa-m06-a00-fun3d/hsc03-qual.tec" "pragmatic/hsc03_out-qual.tec" "pragmatic/hsc10_out-qual.tec" "sa-m06-a00-fun3d/omega_h/hsc03-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc03-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc10-qual.tec"'
 $!VarSet |LFDSVL1| = '"V1" "V2"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
@@ -98,7 +98,7 @@ $!GLOBALLINEPLOT
     ANCHORALIGNMENT = TOPLEFT
     }
 $!LINEMAP  [1]
-  NAME = 'Pragmatic 30K'
+  NAME = 'Lp Metric'
   ASSIGN
     {
     ZONE = 1
@@ -107,25 +107,25 @@ $!LINEMAP  [1]
     }
   LINES
     {
-    COLOR = RED
+    COLOR = BLACK
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = BLACK
+    FILLCOLOR = BLACK
     }
   BARCHARTS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = BLACK
+    FILLCOLOR = BLACK
     }
   ERRORBARS
     {
-    COLOR = RED
+    COLOR = BLACK
     }
 $!LINEMAP  [2]
-  NAME = 'Pragmtic 100K'
+  NAME = 'Pragmatic 30K'
   ASSIGN
     {
     ZONE = 2
@@ -134,25 +134,25 @@ $!LINEMAP  [2]
     }
   LINES
     {
-    COLOR = GREEN
+    COLOR = RED
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = GREEN
-    FILLCOLOR = GREEN
+    COLOR = RED
+    FILLCOLOR = RED
     }
   BARCHARTS
     {
-    COLOR = GREEN
-    FILLCOLOR = GREEN
+    COLOR = RED
+    FILLCOLOR = RED
     }
   ERRORBARS
     {
-    COLOR = GREEN
+    COLOR = RED
     }
 $!LINEMAP  [3]
-  NAME = 'Omega_h 30K'
+  NAME = 'Pragmtic 100K'
   ASSIGN
     {
     ZONE = 3
@@ -161,6 +161,33 @@ $!LINEMAP  [3]
     }
   LINES
     {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [4]
+  NAME = 'Omega_h 30K'
+  ASSIGN
+    {
+    ZONE = 4
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
     COLOR = BLUE
     LINETHICKNESS = 0.4
     }
@@ -178,11 +205,11 @@ $!LINEMAP  [3]
     {
     COLOR = BLUE
     }
-$!LINEMAP  [4]
+$!LINEMAP  [5]
   NAME = 'refine 30K'
   ASSIGN
     {
-    ZONE = 4
+    ZONE = 5
     XAXISVAR = 1
     YAXISVAR = 2
     }
@@ -205,11 +232,11 @@ $!LINEMAP  [4]
     {
     COLOR = CUSTOM1
     }
-$!LINEMAP  [5]
+$!LINEMAP  [6]
   NAME = 'refine 100K'
   ASSIGN
     {
-    ZONE = 5
+    ZONE = 6
     XAXISVAR = 1
     YAXISVAR = 2
     }
@@ -237,8 +264,7 @@ $!XYLINEAXIS
 $!XYLINEAXIS 
   XDETAIL 1
     {
-    COORDSCALE = LOG
-    RANGEMIN = 0.00010000000000000000479
+    RANGEMIN = 0
     RANGEMAX = 1
     GRSPACING = 0.2
     TITLE
@@ -250,10 +276,9 @@ $!XYLINEAXIS
 $!XYLINEAXIS 
   YDETAIL 1
     {
-    COORDSCALE = LOG
-    RANGEMIN = 1.0000000000000000364E-10
-    RANGEMAX = 0.010000000000000000208
-    GRSPACING = 0.002
+    RANGEMIN = 0
+    RANGEMAX = 4
+    GRSPACING = 0.5
     TITLE
       {
       TITLEMODE = USETEXT
