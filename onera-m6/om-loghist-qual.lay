@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"./sa-m084-a306-fun3d/onera03-qual.tec" "./sa-m084-a306-fun3d/onera10-qual.tec" "./sa-m084-a306-fun3d/epic/onera03.epic-qual.tec" "./sa-m084-a306-fun3d/epic/onera10.epic-qual.tec" "./pragmatic/onera03_out-qual.tec" "./pragmatic/onera10_out-qual.tec"'
+$!VarSet |LFDSFN1| = '"./sa-m084-a306-fun3d/onera03-qual.tec" "./sa-m084-a306-fun3d/onera10-qual.tec" "./sa-m084-a306-fun3d/epic/onera03.epic-qual.tec" "./sa-m084-a306-fun3d/epic/onera10.epic-qual.tec" "sa-m084-a306-fun3d/refine/refine-onera03-qual.tec" "sa-m084-a306-fun3d/refine/refine-onera10-qual.tec" "./pragmatic/onera03_out-qual.tec" "./pragmatic/onera10_out-qual.tec"'
 $!VarSet |LFDSVL1| = '"V1" "V2"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
