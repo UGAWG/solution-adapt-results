@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"sa-m084-a306-fun3d/onera03-ratio.tec" "pragmatic/onera03_out-ratio.tec" "pragmatic/onera10_out-ratio.tec" "sa-m084-a306-fun3d/refine/refine-onera03-ratio.tec" "sa-m084-a306-fun3d/refine/refine-onera10-ratio.tec" "sa-m084-a306-fun3d/epic/onera03.epic-ratio.tec" "sa-m084-a306-fun3d/epic/onera10.epic-ratio.tec"'
+$!VarSet |LFDSFN1| = '"sa-m084-a306-fun3d/onera03-ratio.tec" "sa-m084-a306-fun3d/onera10-ratio.tec" "sa-m084-a306-fun3d/epic/onera03.epic-ratio.tec" "sa-m084-a306-fun3d/epic/onera10.epic-ratio.tec" "sa-m084-a306-fun3d/refine/refine-onera03-ratio.tec" "sa-m084-a306-fun3d/refine/refine-onera10-ratio.tec" "pragmatic/onera03_out-ratio.tec" "pragmatic/onera10_out-ratio.tec"'
 $!VarSet |LFDSVL1| = '"V1" "V2"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
@@ -77,7 +77,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-7]
+$!ACTIVELINEMAPS  =  [1-8]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -92,13 +92,12 @@ $!GLOBALLINEPLOT
       }
     XYPOS
       {
-      X = 54.645
-      Y = 85.53
+      X = 96.056
+      Y = 91.622
       }
-    ANCHORALIGNMENT = TOPLEFT
     }
 $!LINEMAP  [1]
-  NAME = 'Lp Metric'
+  NAME = 'Lp Metric 30K'
   ASSIGN
     {
     ZONE = 1
@@ -125,7 +124,7 @@ $!LINEMAP  [1]
     COLOR = RED
     }
 $!LINEMAP  [2]
-  NAME = 'Pragmatic 30K'
+  NAME = 'Lp Metric 100K'
   ASSIGN
     {
     ZONE = 2
@@ -134,25 +133,25 @@ $!LINEMAP  [2]
     }
   LINES
     {
-    COLOR = RED
+    COLOR = BLACK
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = GREEN
+    FILLCOLOR = GREEN
     }
   BARCHARTS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = GREEN
+    FILLCOLOR = GREEN
     }
   ERRORBARS
     {
-    COLOR = RED
+    COLOR = GREEN
     }
 $!LINEMAP  [3]
-  NAME = 'Pragmtic 100K'
+  NAME = 'EPIC 30K'
   ASSIGN
     {
     ZONE = 3
@@ -161,25 +160,25 @@ $!LINEMAP  [3]
     }
   LINES
     {
-    COLOR = GREEN
+    COLOR = RED
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = GREEN
-    FILLCOLOR = GREEN
+    COLOR = BLUE
+    FILLCOLOR = BLUE
     }
   BARCHARTS
     {
-    COLOR = GREEN
-    FILLCOLOR = GREEN
+    COLOR = BLUE
+    FILLCOLOR = BLUE
     }
   ERRORBARS
     {
-    COLOR = GREEN
+    COLOR = BLUE
     }
 $!LINEMAP  [4]
-  NAME = 'refine 30K'
+  NAME = 'EPIC 100K'
   ASSIGN
     {
     ZONE = 4
@@ -188,25 +187,25 @@ $!LINEMAP  [4]
     }
   LINES
     {
-    COLOR = BLUE
+    COLOR = RED
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = CUSTOM1
+    FILLCOLOR = CUSTOM1
     }
   BARCHARTS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = CUSTOM1
+    FILLCOLOR = CUSTOM1
     }
   ERRORBARS
     {
-    COLOR = BLUE
+    COLOR = CUSTOM1
     }
 $!LINEMAP  [5]
-  NAME = 'refine 100K'
+  NAME = 'refine 30K'
   ASSIGN
     {
     ZONE = 5
@@ -215,25 +214,25 @@ $!LINEMAP  [5]
     }
   LINES
     {
-    COLOR = CUSTOM1
+    COLOR = BLUE
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = CUSTOM1
-    FILLCOLOR = CUSTOM1
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
     }
   BARCHARTS
     {
-    COLOR = CUSTOM1
-    FILLCOLOR = CUSTOM1
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
     }
   ERRORBARS
     {
-    COLOR = CUSTOM1
+    COLOR = CUSTOM3
     }
 $!LINEMAP  [6]
-  NAME = 'EPIC 30K'
+  NAME = 'refine 100K'
   ASSIGN
     {
     ZONE = 6
@@ -242,25 +241,25 @@ $!LINEMAP  [6]
     }
   LINES
     {
-    COLOR = CUSTOM3
+    COLOR = BLUE
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = CUSTOM3
-    FILLCOLOR = CUSTOM3
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   BARCHARTS
     {
-    COLOR = CUSTOM3
-    FILLCOLOR = CUSTOM3
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   ERRORBARS
     {
-    COLOR = CUSTOM3
+    COLOR = PURPLE
     }
 $!LINEMAP  [7]
-  NAME = 'EPIC 100K'
+  NAME = 'Pragmatic 30K'
   ASSIGN
     {
     ZONE = 7
@@ -269,22 +268,49 @@ $!LINEMAP  [7]
     }
   LINES
     {
-    COLOR = CUSTOM32
+    COLOR = GREEN
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = CUSTOM3
-    FILLCOLOR = CUSTOM3
+    COLOR = RED
+    FILLCOLOR = RED
     }
   BARCHARTS
     {
-    COLOR = CUSTOM3
-    FILLCOLOR = CUSTOM3
+    COLOR = RED
+    FILLCOLOR = RED
     }
   ERRORBARS
     {
-    COLOR = CUSTOM3
+    COLOR = RED
+    }
+$!LINEMAP  [8]
+  NAME = 'Prgamatic 100K'
+  ASSIGN
+    {
+    ZONE = 8
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
     }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
@@ -303,7 +329,7 @@ $!XYLINEAXIS
 $!XYLINEAXIS 
   YDETAIL 1
     {
-    RANGEMIN = 1.0000000000000000818E-05
+    RANGEMIN = 9.999999682655225389E-21
     RANGEMAX = 2
     GRSPACING = 0.5
     TITLE
