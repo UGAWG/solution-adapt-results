@@ -1,0 +1,231 @@
+ FORCE SUMMARY FOR BOUNDARY      1
+ Boundary type = 5000 Family = riemann_inflow
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.0000000E+00   Cd  =  0.0000000E+00
+ Cmx =  0.0000000E+00   Cmy =  0.0000000E+00   Cmz =  0.0000000E+00
+ Cx  =  0.0000000E+00   Cy  =  0.0000000E+00   Cz  =  0.0000000E+00
+ Viscous forces
+ Cl  =  0.0000000E+00   Cd  =  0.0000000E+00
+ Cmx =  0.0000000E+00   Cmy =  0.0000000E+00   Cmz =  0.0000000E+00
+ Cx  =  0.0000000E+00   Cy  =  0.0000000E+00   Cz  =  0.0000000E+00
+ Total forces
+ Cl  =  0.0000000E+00   Cd  =  0.0000000E+00
+ Cmx =  0.0000000E+00   Cmy =  0.0000000E+00   Cmz =  0.0000000E+00
+ Cx  =  0.0000000E+00   Cy  =  0.0000000E+00   Cz  =  0.0000000E+00
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      2
+ Boundary type = 6662 Family = y_symmetry
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.0000000E+00   Cd  =  0.0000000E+00
+ Cmx =  0.0000000E+00   Cmy =  0.0000000E+00   Cmz =  0.0000000E+00
+ Cx  =  0.0000000E+00   Cy  =  0.0000000E+00   Cz  =  0.0000000E+00
+ Viscous forces
+ Cl  =  0.0000000E+00   Cd  =  0.0000000E+00
+ Cmx =  0.0000000E+00   Cmy =  0.0000000E+00   Cmz =  0.0000000E+00
+ Cx  =  0.0000000E+00   Cy  =  0.0000000E+00   Cz  =  0.0000000E+00
+ Total forces
+ Cl  =  0.0000000E+00   Cd  =  0.0000000E+00
+ Cmx =  0.0000000E+00   Cmy =  0.0000000E+00   Cmz =  0.0000000E+00
+ Cx  =  0.0000000E+00   Cy  =  0.0000000E+00   Cz  =  0.0000000E+00
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      3
+ Boundary type = 4000 Family = solid_wall_wing_lower
+ ---------------------------------------------------
+ Pressure forces
+ Cl  = -0.1135630E+00   Cd  =  0.1026190E-01
+ Cmx = -0.5469979E-01   Cmy =  0.1129753E+00   Cmz = -0.8375877E-02
+ Cx  =  0.1630945E-01   Cy  = -0.7221929E-02   Cz  = -0.1128533E+00
+ Viscous forces
+ Cl  = -0.5152237E-03   Cd  =  0.5908605E-02
+ Cmx = -0.9686858E-04   Cmy = -0.2291746E-03   Cmz = -0.2649110E-02
+ Cx  =  0.5927684E-02   Cy  =  0.8470734E-04   Cz  = -0.1990778E-03
+ Total forces
+ Cl  = -0.1140782E+00   Cd  =  0.1617050E-01
+ Cmx = -0.5479666E-01   Cmy =  0.1127461E+00   Cmz = -0.1102499E-01
+ Cx  =  0.2223713E-01   Cy  = -0.7137221E-02   Cz  = -0.1130524E+00
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      4
+ Boundary type = 4000 Family = solid_wall_wing_upper
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.3594395E+00   Cd  =  0.7314514E-02
+ Cmx =  0.1622628E+00   Cmy = -0.2839040E+00   Cmz =  0.1221251E-01
+ Cx  = -0.1188340E-01   Cy  =  0.1164668E-01   Cz  =  0.3593175E+00
+ Viscous forces
+ Cl  =  0.2860566E-03   Cd  =  0.3947079E-02
+ Cmx =  0.2387922E-03   Cmy = -0.7325938E-04   Cmz = -0.1591258E-02
+ Cx  =  0.3926181E-02   Cy  =  0.1507065E-03   Cz  =  0.4963505E-03
+ Total forces
+ Cl  =  0.3597256E+00   Cd  =  0.1126159E-01
+ Cmx =  0.1625016E+00   Cmy = -0.2839773E+00   Cmz =  0.1062126E-01
+ Cx  = -0.7957223E-02   Cy  =  0.1179739E-01   Cz  =  0.3598138E+00
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      5
+ Boundary type = 4000 Family = solid_wall_te_upper
+ ---------------------------------------------------
+ Pressure forces
+ Cl  = -0.2890710E-03   Cd  = -0.5157489E-04
+ Cmx = -0.1314075E-03   Cmy =  0.4305975E-03   Cmz =  0.2439775E-04
+ Cx  = -0.3607026E-04   Cy  =  0.1013329E-04   Cz  = -0.2914120E-03
+ Viscous forces
+ Cl  = -0.1086195E-05   Cd  =  0.1493368E-04
+ Cmx = -0.5019507E-07   Cmy =  0.3855132E-06   Cmz = -0.2318446E-05
+ Cx  =  0.1497037E-04   Cy  =  0.6887613E-05   Cz  = -0.2874610E-06
+ Total forces
+ Cl  = -0.2901572E-03   Cd  = -0.3664121E-04
+ Cmx = -0.1314577E-03   Cmy =  0.4309830E-03   Cmz =  0.2207930E-04
+ Cx  = -0.2109989E-04   Cy  =  0.1702090E-04   Cz  = -0.2916995E-03
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      6
+ Boundary type = 4000 Family = solid_wall_te_lower
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.3853420E-03   Cd  = -0.2691903E-04
+ Cmx =  0.1726970E-03   Cmy = -0.5663809E-03   Cmz =  0.3207294E-04
+ Cx  = -0.4745085E-04   Cy  =  0.1333046E-04   Cz  =  0.3833556E-03
+ Viscous forces
+ Cl  =  0.1523661E-05   Cd  =  0.2227366E-04
+ Cmx =  0.1408923E-05   Cmy = -0.4109754E-05   Cmz = -0.5863832E-05
+ Cx  =  0.2216057E-04   Cy  =  0.6968250E-05   Cz  =  0.2710494E-05
+ Total forces
+ Cl  =  0.3868657E-03   Cd  = -0.4645366E-05
+ Cmx =  0.1741059E-03   Cmy = -0.5704906E-03   Cmz =  0.2620911E-04
+ Cx  = -0.2529029E-04   Cy  =  0.2029871E-04   Cz  =  0.3860661E-03
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      7
+ Boundary type = 4000 Family = solid_wall_tip_lower
+ ---------------------------------------------------
+ Pressure forces
+ Cl  = -0.2383183E-02   Cd  = -0.2477155E-03
+ Cmx = -0.2392423E-02   Cmy =  0.3112929E-02   Cmz =  0.2084341E-02
+ Cx  = -0.1201439E-03   Cy  =  0.2786638E-02   Cz  = -0.2393008E-02
+ Viscous forces
+ Cl  =  0.1714989E-04   Cd  =  0.7448440E-04
+ Cmx =  0.2160709E-04   Cmy = -0.3057005E-04   Cmz = -0.5755573E-04
+ Cx  =  0.7346271E-04   Cy  =  0.2268792E-04   Cz  =  0.2110154E-04
+ Total forces
+ Cl  = -0.2366033E-02   Cd  = -0.1732311E-03
+ Cmx = -0.2370816E-02   Cmy =  0.3082359E-02   Cmz =  0.2026785E-02
+ Cx  = -0.4668123E-04   Cy  =  0.2809326E-02   Cz  = -0.2371907E-02
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      8
+ Boundary type = 4000 Family = solid_wall_tip_fore_lower
+ ---------------------------------------------------
+ Pressure forces
+ Cl  = -0.1153488E-04   Cd  = -0.1728268E-04
+ Cmx = -0.1240814E-04   Cmy =  0.1350463E-04   Cmz =  0.3475036E-04
+ Cx  = -0.1664229E-04   Cy  =  0.3077463E-04   Cz  = -0.1244102E-04
+ Viscous forces
+ Cl  = -0.5350923E-07   Cd  =  0.9822712E-06
+ Cmx =  0.1533225E-08   Cmy = -0.5299327E-08   Cmz = -0.5830238E-06
+ Cx  =  0.9837271E-06   Cy  =  0.6948882E-06   Cz  = -0.9976378E-09
+ Total forces
+ Cl  = -0.1158839E-04   Cd  = -0.1630041E-04
+ Cmx = -0.1240661E-04   Cmy =  0.1349933E-04   Cmz =  0.3416733E-04
+ Cx  = -0.1565856E-04   Cy  =  0.3146952E-04   Cz  = -0.1244201E-04
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY      9
+ Boundary type = 4000 Family = solid_wall_tip_fore_upper
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.3603750E-04   Cd  = -0.3844640E-04
+ Cmx =  0.3383983E-04   Cmy = -0.3675178E-04   Cmz =  0.7392705E-04
+ Cx  = -0.4031532E-04   Cy  =  0.5727126E-04   Cz  =  0.3393378E-04
+ Viscous forces
+ Cl  =  0.4052179E-06   Cd  =  0.1027183E-05
+ Cmx =  0.4596884E-06   Cmy = -0.4864176E-06   Cmz = -0.7168252E-06
+ Cx  =  0.1004087E-05   Cy  =  0.5002095E-06   Cz  =  0.4594729E-06
+ Total forces
+ Cl  =  0.3644272E-04   Cd  = -0.3741921E-04
+ Cmx =  0.3429952E-04   Cmy = -0.3723820E-04   Cmz =  0.7321023E-04
+ Cx  = -0.3931123E-04   Cy  =  0.5777147E-04   Cz  =  0.3439325E-04
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY     10
+ Boundary type = 4000 Family = solid_wall_tip_upper
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.3017086E-02   Cd  = -0.4998826E-04
+ Cmx =  0.3009071E-02   Cmy = -0.3834058E-02   Cmz =  0.2383650E-02
+ Cx  = -0.2109741E-03   Cy  =  0.3131521E-02   Cz  =  0.3010116E-02
+ Viscous forces
+ Cl  =  0.1122976E-04   Cd  =  0.4559156E-04
+ Cmx =  0.1391985E-04   Cmy = -0.1668981E-04   Cmz = -0.5139951E-04
+ Cx  =  0.4492709E-04   Cy  = -0.8417422E-05   Cz  =  0.1364751E-04
+ Total forces
+ Cl  =  0.3028316E-02   Cd  = -0.4396698E-05
+ Cmx =  0.3022991E-02   Cmy = -0.3850748E-02   Cmz =  0.2332250E-02
+ Cx  = -0.1660470E-03   Cy  =  0.3123104E-02   Cz  =  0.3023763E-02
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY     11
+ Boundary type = 4000 Family = solid_wall_tip_aft_upper
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.1502577E-09   Cd  =  0.2680916E-10
+ Cmx =  0.1514751E-09   Cmy = -0.2669000E-09   Cmz =  0.1211121E-09
+ Cx  =  0.1874993E-10   Cy  =  0.1461456E-09   Cz  =  0.1514746E-09
+ Viscous forces
+ Cl  =  0.1046486E-08   Cd  =  0.3624432E-08
+ Cmx =  0.1238484E-08   Cmy = -0.2181643E-08   Cmz = -0.2507318E-08
+ Cx  =  0.3563401E-08   Cy  =  0.1103848E-08   Cz  =  0.1238472E-08
+ Total forces
+ Cl  =  0.1196744E-08   Cd  =  0.3651241E-08
+ Cmx =  0.1389959E-08   Cmy = -0.2448543E-08   Cmz = -0.2386206E-08
+ Cx  =  0.3582151E-08   Cy  =  0.1249994E-08   Cz  =  0.1389947E-08
+ 
+ 
+ 
+ FORCE SUMMARY FOR BOUNDARY     12
+ Boundary type = 4000 Family = solid_wall_tip_aft_lower
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.1895798E-07   Cd  = -0.1324436E-08
+ Cmx =  0.1886031E-07   Cmy = -0.3323197E-07   Cmz = -0.1508152E-07
+ Cx  = -0.2334557E-08   Cy  = -0.1819852E-07   Cz  =  0.1886025E-07
+ Viscous forces
+ Cl  =  0.7979396E-09   Cd  =  0.4394467E-08
+ Cmx =  0.1031567E-08   Cmy = -0.1818048E-08   Cmz = -0.3389319E-08
+ Cx  =  0.4345606E-08   Cy  =  0.9996425E-09   Cz  =  0.1031386E-08
+ Total forces
+ Cl  =  0.1975592E-07   Cd  =  0.3070030E-08
+ Cmx =  0.1989187E-07   Cmy = -0.3505002E-07   Cmz = -0.1847084E-07
+ Cx  =  0.2011049E-08   Cy  = -0.1719888E-07   Cz  =  0.1989163E-07
+ 
+ 
+ 
+ 
+ FORCE TOTALS FOR ALL BOUNDARIES
+ ---------------------------------------------------
+ Pressure forces
+ Cl  =  0.2466312E+00   Cd  =  0.1714448E-01
+ Cmx =  0.1082424E+00   Cmy = -0.1718090E+00   Cmz =  0.8469760E-02
+ Cx  =  0.3954448E-02   Cy  =  0.1045441E-01   Cz  =  0.2471948E+00
+ Viscous forces
+ Cl  = -0.1999964E-03   Cd  =  0.1001498E-01
+ Cmx =  0.1792727E-03   Cmy = -0.3539138E-03   Cmz = -0.4358811E-02
+ Cx  =  0.1001138E-01   Cy  =  0.2647375E-03   Cz  =  0.3349055E-03
+ Total forces
+ Cl  =  0.2464312E+00   Cd  =  0.2715947E-01
+ Cmx =  0.1084217E+00   Cmy = -0.1721629E+00   Cmz =  0.4110950E-02
+ Cx  =  0.1396583E-01   Cy  =  0.1071914E-01   Cz  =  0.2475297E+00
