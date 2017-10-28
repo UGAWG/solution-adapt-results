@@ -1,6 +1,12 @@
 #!MC 1410
 $!VarSet |LFDSFN1| = '"onera-ws.dat" "combined_forces_pitchmom_maxmut.dat"'
 $!VarSet |LFDSVL1| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M"'
+$!VarSet |LFDSFN2| = '"Force_LPnorm.dat"'
+$!VarSet |LFDSVL2| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M" "MeshNumber" "Nodes" "Nodes(viscousSurf)" "Nodes(farfield)" "yplus" "Ncell-deg(badcells)" "blank" "CL" "CD" "CDv" "Cm" "NSolveriter" "SolverFinal-residual"'
+$!VarSet |LFDSFN3| = '"Force_Adj_Lift.dat"'
+$!VarSet |LFDSVL3| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M" "MeshNumber" "Nodes" "Nodes(viscousSurf)" "Nodes(farfield)" "yplus" "Ncell-deg(badcells)" "blank" "CL" "CD" "CDv" "Cm" "NSolveriter" "SolverFinal-residual"'
+$!VarSet |LFDSFN4| = '"Force_Adj_Drag.dat"'
+$!VarSet |LFDSVL4| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M" "MeshNumber" "Nodes" "Nodes(viscousSurf)" "Nodes(farfield)" "yplus" "Ncell-deg(badcells)" "blank" "CL" "CD" "CDv" "Cm" "NSolveriter" "SolverFinal-residual"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
   SUBDIVIDEALLCELLS = NO
@@ -58,6 +64,43 @@ $!READDATASET  '|LFDSFN1|'
   VARNAMELIST = '|LFDSVL1|'
 $!REMOVEVAR |LFDSVL1|
 $!REMOVEVAR |LFDSFN1|
+$!READDATASET  '|LFDSFN2|'
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  ASSIGNSTRANDIDS = YES
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL2|'
+$!REMOVEVAR |LFDSVL2|
+$!REMOVEVAR |LFDSFN2|
+$!READDATASET  '|LFDSFN3|'
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  ASSIGNSTRANDIDS = YES
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL3|'
+$!REMOVEVAR |LFDSVL3|
+$!REMOVEVAR |LFDSFN3|
+$!READDATASET  '|LFDSFN4|'
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  ASSIGNSTRANDIDS = YES
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL4|'
+$!REMOVEVAR |LFDSVL4|
+$!REMOVEVAR |LFDSFN4|
+$!ALTERDATA 
+  EQUATION = '{h} = max({Nodes},1)**(-1.0/3.0)'
+$!ALTERDATA 
+  EQUATION = '{CDp} = {CD}-{CDv}'
 $!FRAMELAYOUT 
   SHOWBORDER = NO
   SHOWHEADER = NO
@@ -77,7 +120,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-6]
+$!ACTIVELINEMAPS  =  [1-9]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -97,40 +140,12 @@ $!GLOBALLINEPLOT
       }
     XYPOS
       {
-      X = 13
-      Y = 87
+      X = 87
+      Y = 77
       }
-    ANCHORALIGNMENT = TOPLEFT
     }
 $!LINEMAP  [1]
-  NAME = '&ZN&'
-  ASSIGN
-    {
-    ZONE = 1
-    XAXISVAR = 2
-    YAXISVAR = 7
-    }
-  LINES
-    {
-    COLOR = BLACK
-    }
-  SYMBOLS
-    {
-    COLOR = BLACK
-    FILLCOLOR = BLACK
-    SIZE = 0.5
-    }
-  BARCHARTS
-    {
-    COLOR = BLACK
-    FILLCOLOR = BLACK
-    }
-  ERRORBARS
-    {
-    COLOR = BLACK
-    }
-$!LINEMAP  [2]
-  NAME = '&ZN&'
+  NAME = 'FV, Fixed'
   ASSIGN
     {
     ZONE = 2
@@ -139,11 +154,11 @@ $!LINEMAP  [2]
     }
   LINES
     {
-    COLOR = GREEN
+    COLOR = CUSTOM2
     }
   SYMBOLS
     {
-    COLOR = GREEN
+    COLOR = CUSTOM2
     FILLCOLOR = GREEN
     SIZE = 0.5
     }
@@ -156,8 +171,8 @@ $!LINEMAP  [2]
     {
     COLOR = GREEN
     }
-$!LINEMAP  [3]
-  NAME = '&ZN&'
+$!LINEMAP  [2]
+  NAME = 'FV, Fixed'
   ASSIGN
     {
     ZONE = 3
@@ -166,11 +181,11 @@ $!LINEMAP  [3]
     }
   LINES
     {
-    COLOR = BLUE
+    COLOR = CUSTOM2
     }
   SYMBOLS
     {
-    COLOR = BLUE
+    COLOR = CUSTOM2
     FILLCOLOR = BLUE
     SIZE = 0.5
     }
@@ -183,8 +198,8 @@ $!LINEMAP  [3]
     {
     COLOR = BLUE
     }
-$!LINEMAP  [4]
-  NAME = '&ZN&'
+$!LINEMAP  [3]
+  NAME = 'FV, Fixed'
   ASSIGN
     {
     ZONE = 4
@@ -193,11 +208,11 @@ $!LINEMAP  [4]
     }
   LINES
     {
-    COLOR = RED
+    COLOR = CUSTOM2
     }
   SYMBOLS
     {
-    COLOR = RED
+    COLOR = CUSTOM2
     FILLCOLOR = RED
     SIZE = 0.5
     }
@@ -210,8 +225,8 @@ $!LINEMAP  [4]
     {
     COLOR = CUSTOM1
     }
-$!LINEMAP  [5]
-  NAME = '&ZN&'
+$!LINEMAP  [4]
+  NAME = 'FV, Fixed'
   ASSIGN
     {
     ZONE = 5
@@ -220,11 +235,11 @@ $!LINEMAP  [5]
     }
   LINES
     {
-    COLOR = CUSTOM3
+    COLOR = CUSTOM2
     }
   SYMBOLS
     {
-    COLOR = CUSTOM3
+    COLOR = CUSTOM2
     FILLCOLOR = CUSTOM3
     SIZE = 0.5
     }
@@ -237,7 +252,7 @@ $!LINEMAP  [5]
     {
     COLOR = CUSTOM3
     }
-$!LINEMAP  [6]
+$!LINEMAP  [5]
   NAME = '&ZN&'
   ASSIGN
     {
@@ -247,11 +262,11 @@ $!LINEMAP  [6]
     }
   LINES
     {
-    COLOR = PURPLE
+    COLOR = BLACK
     }
   SYMBOLS
     {
-    COLOR = PURPLE
+    COLOR = BLACK
     FILLCOLOR = PURPLE
     SIZE = 0.5
     }
@@ -264,6 +279,114 @@ $!LINEMAP  [6]
     {
     COLOR = PURPLE
     }
+$!LINEMAP  [6]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 2
+    YAXISVAR = 7
+    }
+  LINES
+    {
+    COLOR = BLUE
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLACK
+    SIZE = 0.5
+    }
+  BARCHARTS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLACK
+    }
+  ERRORBARS
+    {
+    COLOR = BLACK
+    }
+$!LINEMAP  [7]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 7
+    XAXISVAR = 24
+    YAXISVAR = 20
+    }
+  LINES
+    {
+    COLOR = RED
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = BLACK
+    SIZE = 0.5
+    }
+  BARCHARTS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLACK
+    }
+  ERRORBARS
+    {
+    COLOR = BLACK
+    }
+$!LINEMAP  [8]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 8
+    XAXISVAR = 24
+    YAXISVAR = 20
+    }
+  LINES
+    {
+    COLOR = GREEN
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = BLACK
+    SIZE = 0.5
+    }
+  BARCHARTS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLACK
+    }
+  ERRORBARS
+    {
+    COLOR = BLACK
+    }
+$!LINEMAP  [9]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 9
+    XAXISVAR = 24
+    YAXISVAR = 20
+    }
+  LINES
+    {
+    COLOR = CUSTOM3
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = BLACK
+    SIZE = 0.5
+    }
+  BARCHARTS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLACK
+    }
+  ERRORBARS
+    {
+    COLOR = BLACK
+    }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
 $!XYLINEAXIS 
@@ -272,13 +395,24 @@ $!XYLINEAXIS
     RANGEMIN = 0
     RANGEMAX = 0.040000000000000000833
     GRSPACING = 0.005
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'h=N^(-1/3)'
+      }
     }
 $!XYLINEAXIS 
   YDETAIL 1
     {
     RANGEMIN = 0.0040000000000000000833
-    RANGEMAX = 0.014000000000000000291
-    GRSPACING = 0.002
+    RANGEMAX = 0.010000000000000000208
+    GRSPACING = 0.001
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'CDv'
+      OFFSET = 8
+      }
     }
 $!LINEPLOTLAYERS 
   SHOWSYMBOLS = YES
