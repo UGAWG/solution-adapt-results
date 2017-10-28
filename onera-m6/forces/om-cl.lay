@@ -7,6 +7,8 @@ $!VarSet |LFDSFN3| = '"Force_Adj_Lift.dat"'
 $!VarSet |LFDSVL3| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M" "MeshNumber" "Nodes" "Nodes(viscousSurf)" "Nodes(farfield)" "yplus" "Ncell-deg(badcells)" "blank" "CL" "CD" "CDv" "Cm" "NSolveriter" "SolverFinal-residual"'
 $!VarSet |LFDSFN4| = '"Force_Adj_Drag.dat"'
 $!VarSet |LFDSVL4| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M" "MeshNumber" "Nodes" "Nodes(viscousSurf)" "Nodes(farfield)" "yplus" "Ncell-deg(badcells)" "blank" "CL" "CD" "CDv" "Cm" "NSolveriter" "SolverFinal-residual"'
+$!VarSet |LFDSFN5| = '"Force_LP2.dat"'
+$!VarSet |LFDSVL5| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT" "C_M" "MeshNumber" "Nodes" "Nodes(viscousSurf)" "Nodes(farfield)" "yplus" "Ncell-deg(badcells)" "blank" "CL" "CD" "CDv" "Cm" "NSolveriter" "SolverFinal-residual"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
   SUBDIVIDEALLCELLS = NO
@@ -97,6 +99,17 @@ $!READDATASET  '|LFDSFN4|'
   VARNAMELIST = '|LFDSVL4|'
 $!REMOVEVAR |LFDSVL4|
 $!REMOVEVAR |LFDSFN4|
+$!READDATASET  '|LFDSFN5|'
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  READDATAOPTION = APPEND
+  RESETSTYLE = NO
+  ASSIGNSTRANDIDS = YES
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL5|'
+$!REMOVEVAR |LFDSVL5|
+$!REMOVEVAR |LFDSFN5|
 $!ALTERDATA 
   EQUATION = '{h} = max({Nodes},1)**(-1.0/3.0)'
 $!ALTERDATA 
@@ -120,7 +133,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-9]
+$!ACTIVELINEMAPS  =  [1-10]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -375,6 +388,33 @@ $!LINEMAP  [9]
   SYMBOLS
     {
     COLOR = CUSTOM3
+    FILLCOLOR = BLACK
+    SIZE = 0.5
+    }
+  BARCHARTS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLACK
+    }
+  ERRORBARS
+    {
+    COLOR = BLACK
+    }
+$!LINEMAP  [10]
+  NAME = 'GGNS-FE+EPIC, Lp Mach Adapted'
+  ASSIGN
+    {
+    ZONE = 10
+    XAXISVAR = 24
+    YAXISVAR = 18
+    }
+  LINES
+    {
+    COLOR = PURPLE
+    }
+  SYMBOLS
+    {
+    COLOR = PURPLE
     FILLCOLOR = BLACK
     SIZE = 0.5
     }
