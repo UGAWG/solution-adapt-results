@@ -11,12 +11,12 @@ mkdir refine
 
 cd refine
 
-transmesh ../oneram6_LP_154K.mach.solb oneram6_LP_154K.mach.sol
+transmesh ../oneram6_LP_154K.metNode.solb oneram6_LP_154K.metNode.sol
 
 nohup ~/refine/egads/src/ref_driver \
       -i ../oneram6_LP_154K.meshb \
       -g ~/cases/ugawg-solution-adapt-cases/onera-m6/geometry/oneram6_with_sharp_TE_boxff.egads \
-      -m oneram6_LP_154K.mach.sol \
+      -m oneram6_LP_154K.metNode.sol \
       -o ${rootout} \
       < /dev/null > ${rootout}-stdout &
 
