@@ -401,7 +401,7 @@ $!LINEMAP  [9]
     COLOR = BLACK
     }
 $!LINEMAP  [10]
-  NAME = 'GGNS-FE+EPIC, Lp Mach Adapted'
+  NAME = '&ZN&'
   ASSIGN
     {
     ZONE = 10
