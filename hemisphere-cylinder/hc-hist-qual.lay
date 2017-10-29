@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"sa-m06-a00-fun3d/hsc03-qual.tec" "sa-m06-a00-fun3d/hsc10-qual.tec" "sa-m06-a00-fun3d/epic/hsc10.epic-qual.tec" "sa-m06-a00-fun3d/epic/hsc03.epic-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc10-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc03-qual.tec" "pragmatic/hsc03_out-qual.tec" "pragmatic/hsc10_out-qual.tec" "sa-m06-a00-fun3d/omega_h/hsc03-qual.tec"'
+$!VarSet |LFDSFN1| = '"sa-m06-a00-fun3d/hsc03-qual.tec" "sa-m06-a00-fun3d/hsc10-qual.tec" "sa-m06-a00-fun3d/epic/hsc10.epic-qual.tec" "sa-m06-a00-fun3d/epic/hsc03.epic-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc10-qual.tec" "sa-m06-a00-fun3d/refine/refine-hsc03-qual.tec" "pragmatic/hsc03_out_new-qual.tec" "pragmatic/hsc10_out_new-qual.tec" "sa-m06-a00-fun3d/omega_h/hsc03-qual.tec"'
 $!VarSet |LFDSVL1| = '"V1" "V2"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 

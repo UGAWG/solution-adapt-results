@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"sa-m06-a00-fun3d/hsc03-ratio.tec" "sa-m06-a00-fun3d/hsc10-ratio.tec" "sa-m06-a00-fun3d/epic/hsc10.epic-ratio.tec" "sa-m06-a00-fun3d/epic/hsc03.epic-ratio.tec" "sa-m06-a00-fun3d/refine/refine-hsc10-ratio.tec" "sa-m06-a00-fun3d/refine/refine-hsc03-ratio.tec" "pragmatic/hsc03_out-ratio.tec" "pragmatic/hsc10_out-ratio.tec" "sa-m06-a00-fun3d/omega_h/hsc03-ratio.tec"'
+$!VarSet |LFDSFN1| = '"sa-m06-a00-fun3d/hsc03-ratio.tec" "sa-m06-a00-fun3d/hsc10-ratio.tec" "sa-m06-a00-fun3d/epic/hsc10.epic-ratio.tec" "sa-m06-a00-fun3d/epic/hsc03.epic-ratio.tec" "sa-m06-a00-fun3d/refine/refine-hsc10-ratio.tec" "sa-m06-a00-fun3d/refine/refine-hsc03-ratio.tec" "pragmatic/hsc03_out_new-ratio.tec" "pragmatic/hsc10_out_new-ratio.tec" "sa-m06-a00-fun3d/omega_h/hsc03-ratio.tec"'
 $!VarSet |LFDSVL1| = '"V1" "V2"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
