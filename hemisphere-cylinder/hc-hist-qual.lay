@@ -246,17 +246,17 @@ $!LINEMAP  [6]
     }
   SYMBOLS
     {
-    COLOR = PURPLE
-    FILLCOLOR = PURPLE
+    COLOR = BLUE
+    FILLCOLOR = BLUE
     }
   BARCHARTS
     {
-    COLOR = PURPLE
-    FILLCOLOR = PURPLE
+    COLOR = BLUE
+    FILLCOLOR = BLUE
     }
   ERRORBARS
     {
-    COLOR = PURPLE
+    COLOR = BLUE
     }
 $!LINEMAP  [7]
   NAME = 'Pragmatic 30K'
@@ -273,17 +273,17 @@ $!LINEMAP  [7]
     }
   SYMBOLS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = GREEN
+    FILLCOLOR = GREEN
     }
   BARCHARTS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = GREEN
+    FILLCOLOR = GREEN
     }
   ERRORBARS
     {
-    COLOR = RED
+    COLOR = GREEN
     }
 $!LINEMAP  [8]
   NAME = 'Prgamatic 100K'
@@ -322,22 +322,22 @@ $!LINEMAP  [9]
     }
   LINES
     {
-    COLOR = CUSTOM3
+    COLOR = PURPLE
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   BARCHARTS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   ERRORBARS
     {
-    COLOR = BLUE
+    COLOR = PURPLE
     }
 $!LINEMAP  [10]
   NAME = 'Feflo.q 30K'
@@ -349,22 +349,22 @@ $!LINEMAP  [10]
     }
   LINES
     {
-    COLOR = CUSTOM3
+    COLOR = PURPLE
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   BARCHARTS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   ERRORBARS
     {
-    COLOR = BLUE
+    COLOR = PURPLE
     }
 $!LINEMAP  [11]
   NAME = 'Omega_h 30K'
@@ -381,17 +381,17 @@ $!LINEMAP  [11]
     }
   SYMBOLS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
     }
   BARCHARTS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
     }
   ERRORBARS
     {
-    COLOR = BLUE
+    COLOR = CUSTOM3
     }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
@@ -411,7 +411,7 @@ $!XYLINEAXIS
   YDETAIL 1
     {
     RANGEMIN = 0
-    RANGEMAX = 4
+    RANGEMAX = 5
     GRSPACING = 0.5
     TITLE
       {
