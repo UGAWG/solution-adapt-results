@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"./sa-m084-a306-fun3d/onera03-qual.tec" "./sa-m084-a306-fun3d/onera10-qual.tec" "./sa-m084-a306-fun3d/epic/onera03.epic-qual.tec" "./sa-m084-a306-fun3d/epic/onera10.epic-qual.tec" "sa-m084-a306-fun3d/refine/refine-onera03-qual.tec" "sa-m084-a306-fun3d/refine/refine-onera10-qual.tec" "./pragmatic/onera03_out_new-qual.tec" "./pragmatic/onera10_out_new-qual.tec"'
+$!VarSet |LFDSFN1| = '"./sa-m084-a306-fun3d/onera03-qual.tec" "./sa-m084-a306-fun3d/onera10-qual.tec" "./sa-m084-a306-fun3d/epic/onera03.epic-qual.tec" "./sa-m084-a306-fun3d/epic/onera10.epic-qual.tec" "sa-m084-a306-fun3d/refine/refine-onera03-qual.tec" "sa-m084-a306-fun3d/refine/refine-onera10-qual.tec" "./pragmatic/onera03_out_new-qual.tec" "./pragmatic/onera10_out_new-qual.tec" "./sa-m084-a306-fun3d/fefloa/onera03-fefloa-qual.tec" "./sa-m084-a306-fun3d/fefloa/onera10-fefloa-qual.tec"'
 $!VarSet |LFDSVL1| = '"V1" "V2"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
@@ -77,7 +77,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-9]
+$!ACTIVELINEMAPS  =  [1-10]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -246,17 +246,17 @@ $!LINEMAP  [6]
     }
   SYMBOLS
     {
-    COLOR = PURPLE
-    FILLCOLOR = PURPLE
+    COLOR = BLUE
+    FILLCOLOR = BLUE
     }
   BARCHARTS
     {
-    COLOR = PURPLE
-    FILLCOLOR = PURPLE
+    COLOR = BLUE
+    FILLCOLOR = BLUE
     }
   ERRORBARS
     {
-    COLOR = PURPLE
+    COLOR = BLUE
     }
 $!LINEMAP  [7]
   NAME = 'Pragmatic 30K'
@@ -273,17 +273,17 @@ $!LINEMAP  [7]
     }
   SYMBOLS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = GREEN
+    FILLCOLOR = GREEN
     }
   BARCHARTS
     {
-    COLOR = RED
-    FILLCOLOR = RED
+    COLOR = GREEN
+    FILLCOLOR = GREEN
     }
   ERRORBARS
     {
-    COLOR = RED
+    COLOR = GREEN
     }
 $!LINEMAP  [8]
   NAME = 'Prgamatic 100K'
@@ -313,7 +313,7 @@ $!LINEMAP  [8]
     COLOR = GREEN
     }
 $!LINEMAP  [9]
-  NAME = 'Omega_h 30K'
+  NAME = 'Feflo.a 30K'
   ASSIGN
     {
     ZONE = 9
@@ -322,22 +322,49 @@ $!LINEMAP  [9]
     }
   LINES
     {
-    COLOR = CUSTOM3
+    COLOR = PURPLE
     LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   BARCHARTS
     {
-    COLOR = BLUE
-    FILLCOLOR = BLUE
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
     }
   ERRORBARS
     {
-    COLOR = BLUE
+    COLOR = PURPLE
+    }
+$!LINEMAP  [10]
+  NAME = 'Feflo.a 100K'
+  ASSIGN
+    {
+    ZONE = 10
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = PURPLE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
+    }
+  BARCHARTS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
+    }
+  ERRORBARS
+    {
+    COLOR = PURPLE
     }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
