@@ -340,7 +340,7 @@ $!LINEMAP  [9]
     COLOR = PURPLE
     }
 $!LINEMAP  [10]
-  NAME = 'Feflo.q 30K'
+  NAME = 'Feflo.a 100K'
   ASSIGN
     {
     ZONE = 10
