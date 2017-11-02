@@ -93,11 +93,14 @@ $!GLOBALLINEPLOT
     BOX
       {
       BOXTYPE = NONE
+      MARGIN = 0
       }
     XYPOS
       {
-      X = 95
+      X = 15
+      Y = 89
       }
+    ANCHORALIGNMENT = TOPLEFT
     }
 $!LINEMAP  [1]
   NAME = '&ZN&'
