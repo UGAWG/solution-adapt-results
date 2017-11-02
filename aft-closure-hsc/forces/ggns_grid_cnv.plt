@@ -1,17 +1,6 @@
 #
 #  Alpha=0 degrees
 #
-VARIABLES = "MESH" "NODES" "NODESsurf" "NODESFF" "Yplus" "Cell-deg" "CL" "CD" "CDv" "CM" "Iter" "Res"
-ZONE T="al=0, aft-closure, Mach-heuristic, mod-tau"
-19   190469   45053    12434   6.9e+00   0  -2.12362382317e-05   1.36995527883e-02    1.177774637e-02   9.32785601529e-05    14  3.343e-09 
-20   375027   72372    24661   5.8e+00   0  -4.94311779797e-06   1.33295370468e-02    1.175324420e-02   2.00973996615e-05    14  8.029e-09 
-44   753860  118637    45918   5.2e+00   0   1.23678387777e-06   1.31535619946e-02    1.177125691e-02  -3.11455153266e-06    11  3.395e-10
-
-VARIABLES = "MESH" "NODES" "NODESsurf" "NODESFF" "Yplus" "Cell-deg" "CL" "CD" "CDv" "CM" "Iter" "Res"
-ZONE T="al=0, aft-closure, adj-drag, mod-tau"
-19   194569   37756    19751   6.4e+00   0  -4.07906317034e-06   1.35288224606e-02    1.174502265e-02  -1.21528128426e-05    14  1.757e-09 
-19   383879   65755    38758   5.3e+00   0   1.46506682028e-06   1.32484329431e-02    1.176036447e-02  -5.52446902123e-06    14  3.962e-09 
-51   769967  118245    72304   4.6e+00   0  -2.48674779277e-06   1.31217721945e-02    1.178593735e-02   6.63739803244e-06    11  2.085e-10 
 
 VARIABLES = "MESH" "NODES" "NODESsurf" "NODESFF" "Yplus" "Cell-deg" "CL" "CD" "CDv" "CM" "Iter" "Res"
 ZONE T="al=0, aft-closure, Mach-heuristic" 
