@@ -1,33 +1,32 @@
 #!/usr/bin/env bash
 
 if [ -z "$1" ] ; then
-    for lay in `ls *.lay` ; do
-	$0 ${lay}
+    for mcr in `ls *.mcr` ; do
+	$0 ${mcr}
     done
     exit 0
 fi
 
 if (( $# > 1 )) ; then
-    for lay in "$@" ; do
-	$0 ${lay}
+    for mcr in "$@" ; do
+	$0 ${mcr}
     done
     exit 0
 fi
 
-lay=$1
-eps=${lay%lay}eps
+mcr=$1
+eps=${mcr%mcr}eps
 
-echo ${lay}
+echo ${mcr}
 echo ${eps}
 
-cat > lay2eps.mcr <<EOF
-#!MC 1410
-\$!OPENLAYOUT  "${lay}"
+cp ${mcr} lay2eps.mcr
+cat >> lay2eps.mcr <<EOF
 \$!EXPORTSETUP EXPORTFORMAT = EPS
 \$!PRINTSETUP PALETTE = COLOR
 \$!EXPORTSETUP EPSPREVIEWIMAGE{IMAGETYPE = NONE}
 \$!EXPORTSETUP EXPORTFNAME = '${eps}'
-\$!EXPORT 
+\$!EXPORT
   EXPORTREGION = ALLFRAMES
 \$!QUIT
 EOF
