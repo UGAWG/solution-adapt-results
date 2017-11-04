@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"hsc-ws.dat" "HC_combined_forces_pitchmom_maxmut.dat"'
+$!VarSet |LFDSFN1| = '"HC_combined_forces_pitchmom_maxmut.dat" "hsc-ws-l2c.dat" "hsc-ws-l2.dat" "hsc-ws-l4.dat"'
 $!VarSet |LFDSVL1| = '"N" "h=(1/N)^(1/3)" "h^2=(1/N)^(2/3)" "C_L" "C_D" "C_Dp" "C_Dv" "C_My" "max_MUT"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
@@ -77,7 +77,7 @@ $!FRAMENAME  = 'Frame 001'
 $!GLOBALTIME 
   SOLUTIONTIME = 0
 $!DELETELINEMAPS 
-$!ACTIVELINEMAPS  =  [1-2,7,12,17,22,27]
+$!ACTIVELINEMAPS  =  [1,6,11,16,21,26,31-33]
 $!GLOBALLINEPLOT 
   DATALABELS
     {
@@ -86,20 +86,15 @@ $!GLOBALLINEPLOT
   LEGEND
     {
     SHOW = YES
-    TEXTSHAPE
-      {
-      HEIGHT = 2
-      }
     BOX
       {
       BOXTYPE = NONE
       }
     XYPOS
       {
-      X = 13
-      Y = 87
+      X = 87.122
+      Y = 98.839
       }
-    ANCHORALIGNMENT = TOPLEFT
     }
 $!LINEMAP  [1]
   NAME = '&ZN&'
@@ -111,13 +106,15 @@ $!LINEMAP  [1]
     }
   LINES
     {
-    COLOR = BLACK
+    COLOR = RED
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = BLACK
-    FILLCOLOR = BLACK
-    SIZE = 0.5
+    COLOR = RED
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -139,12 +136,14 @@ $!LINEMAP  [2]
   LINES
     {
     COLOR = GREEN
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = GREEN
     FILLCOLOR = GREEN
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -166,12 +165,14 @@ $!LINEMAP  [3]
   LINES
     {
     COLOR = BLUE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = BLUE
     FILLCOLOR = BLUE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -193,12 +194,14 @@ $!LINEMAP  [4]
   LINES
     {
     COLOR = CUSTOM1
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM1
     FILLCOLOR = CUSTOM1
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -220,12 +223,14 @@ $!LINEMAP  [5]
   LINES
     {
     COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM3
     FILLCOLOR = CUSTOM3
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -247,12 +252,14 @@ $!LINEMAP  [6]
   LINES
     {
     COLOR = PURPLE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = PURPLE
     FILLCOLOR = PURPLE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -274,12 +281,14 @@ $!LINEMAP  [7]
   LINES
     {
     COLOR = RED
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = RED
     FILLCOLOR = RED
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -301,12 +310,14 @@ $!LINEMAP  [8]
   LINES
     {
     COLOR = GREEN
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = GREEN
     FILLCOLOR = GREEN
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -328,12 +339,14 @@ $!LINEMAP  [9]
   LINES
     {
     COLOR = BLUE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = BLUE
     FILLCOLOR = BLUE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -355,12 +368,14 @@ $!LINEMAP  [10]
   LINES
     {
     COLOR = CUSTOM1
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM1
     FILLCOLOR = CUSTOM1
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -381,13 +396,15 @@ $!LINEMAP  [11]
     }
   LINES
     {
-    COLOR = CUSTOM3
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = CUSTOM3
+    COLOR = BLACK
     FILLCOLOR = CUSTOM3
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -409,12 +426,14 @@ $!LINEMAP  [12]
   LINES
     {
     COLOR = PURPLE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = PURPLE
     FILLCOLOR = PURPLE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -436,12 +455,14 @@ $!LINEMAP  [13]
   LINES
     {
     COLOR = RED
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = RED
     FILLCOLOR = RED
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -463,12 +484,14 @@ $!LINEMAP  [14]
   LINES
     {
     COLOR = GREEN
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = GREEN
     FILLCOLOR = GREEN
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -490,12 +513,14 @@ $!LINEMAP  [15]
   LINES
     {
     COLOR = BLUE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = BLUE
     FILLCOLOR = BLUE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -517,12 +542,14 @@ $!LINEMAP  [16]
   LINES
     {
     COLOR = CUSTOM1
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM1
     FILLCOLOR = CUSTOM1
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -544,12 +571,14 @@ $!LINEMAP  [17]
   LINES
     {
     COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM3
     FILLCOLOR = CUSTOM3
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -571,12 +600,14 @@ $!LINEMAP  [18]
   LINES
     {
     COLOR = PURPLE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = PURPLE
     FILLCOLOR = PURPLE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -598,12 +629,14 @@ $!LINEMAP  [19]
   LINES
     {
     COLOR = RED
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = RED
     FILLCOLOR = RED
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -625,12 +658,14 @@ $!LINEMAP  [20]
   LINES
     {
     COLOR = GREEN
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = GREEN
     FILLCOLOR = GREEN
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -651,13 +686,15 @@ $!LINEMAP  [21]
     }
   LINES
     {
-    COLOR = BLUE
+    COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = BLUE
+    COLOR = CUSTOM3
     FILLCOLOR = BLUE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -679,12 +716,14 @@ $!LINEMAP  [22]
   LINES
     {
     COLOR = CUSTOM1
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM1
     FILLCOLOR = CUSTOM1
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -706,12 +745,14 @@ $!LINEMAP  [23]
   LINES
     {
     COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM3
     FILLCOLOR = CUSTOM3
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -733,12 +774,14 @@ $!LINEMAP  [24]
   LINES
     {
     COLOR = PURPLE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = PURPLE
     FILLCOLOR = PURPLE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -760,12 +803,14 @@ $!LINEMAP  [25]
   LINES
     {
     COLOR = RED
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = RED
     FILLCOLOR = RED
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -786,13 +831,15 @@ $!LINEMAP  [26]
     }
   LINES
     {
-    COLOR = GREEN
+    COLOR = CUSTOM32
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
-    COLOR = GREEN
+    COLOR = CUSTOM32
     FILLCOLOR = GREEN
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -814,12 +861,14 @@ $!LINEMAP  [27]
   LINES
     {
     COLOR = BLUE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = BLUE
     FILLCOLOR = BLUE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -841,12 +890,14 @@ $!LINEMAP  [28]
   LINES
     {
     COLOR = CUSTOM1
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM1
     FILLCOLOR = CUSTOM1
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -868,12 +919,14 @@ $!LINEMAP  [29]
   LINES
     {
     COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = CUSTOM3
     FILLCOLOR = CUSTOM3
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -895,12 +948,14 @@ $!LINEMAP  [30]
   LINES
     {
     COLOR = PURPLE
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = PURPLE
     FILLCOLOR = PURPLE
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -922,12 +977,14 @@ $!LINEMAP  [31]
   LINES
     {
     COLOR = RED
+    LINETHICKNESS = 0.4
     }
   SYMBOLS
     {
     COLOR = RED
     FILLCOLOR = RED
-    SIZE = 0.5
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
     }
   BARCHARTS
     {
@@ -938,21 +995,93 @@ $!LINEMAP  [31]
     {
     COLOR = RED
     }
+$!LINEMAP  [32]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 32
+    XAXISVAR = 2
+    YAXISVAR = 6
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [33]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 33
+    XAXISVAR = 2
+    YAXISVAR = 6
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
 $!XYLINEAXIS 
   DEPXTOYRATIO = 1
 $!XYLINEAXIS 
   XDETAIL 1
     {
     RANGEMIN = 0
-    RANGEMAX = 0.040000000000000000833
-    GRSPACING = 0.01
+    RANGEMAX = 0.025000000000000001388
+    GRSPACING = 0.005
     }
 $!XYLINEAXIS 
   YDETAIL 1
     {
-    RANGEMIN = 0
-    RANGEMAX = 0.020000000000000000416
-    GRSPACING = 0.005
+    RANGEMIN = -0
+    RANGEMAX = 0.0050000000000000001041
+    GRSPACING = 0.001
+    TICKLABEL
+      {
+      NUMFORMAT
+        {
+        FORMATTING = FIXEDFLOAT
+        TIMEDATEFORMAT = ''
+        }
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'CDp'
+      OFFSET = 9
+      }
     }
 $!LINEPLOTLAYERS 
   SHOWSYMBOLS = YES
