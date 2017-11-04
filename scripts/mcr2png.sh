@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 if [ -z "$1" ] ; then
-    for lay in `ls *.lay` ; do
-	$0 ${lay}
+    for mcr in `ls *.mcr` ; do
+	$0 ${mcr}
     done
     exit 0
 fi
 
 if (( $# > 1 )) ; then
-    for lay in "$@" ; do
-	$0 ${lay}
+    for mcr in "$@" ; do
+	$0 ${mcr}
     done
     exit 0
 fi
