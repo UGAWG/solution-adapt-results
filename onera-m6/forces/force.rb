@@ -91,10 +91,11 @@ File.open(mcr,'w') do |f|
   axisdetail = '$!XYLINEAXIS YDETAIL 1 '
   #  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   #  f.printf axisdetail+"{TITLE{TEXT = 'PL (dB)'}}"+"\n"
-  f.printf axisdetail+"{TITLE{OFFSET = 8}}"+"\n"
+  f.printf axisdetail+"{TITLE{OFFSET = 10}}"+"\n"
   f.printf axisdetail+"{RANGEMIN =  #{range[0]}}"+"\n"
   f.printf axisdetail+"{RANGEMAX =  #{range[1]}}"+"\n"
-#  f.printf axisdetail+"{GRSPACING = 0.02}"+"\n"
+  #  f.printf axisdetail+"{GRSPACING = 0.02}"+"\n"
+  f.printf axisdetail+"{TICKLABEL{NUMFORMAT{FORMATTING= FIXEDFLOAT}}}"+"\n"
 
   f.printf '$!FRAMELAYOUT'+"\n"
   f.printf "  SHOWBORDER = NO\n"
