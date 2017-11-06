@@ -1,0 +1,4 @@
+#!MC 1410
+$!OPENLAYOUT  "machs070.lay"
+$!ACTIVEFIELDMAPS  =  [2]
+
