@@ -67,7 +67,7 @@ File.open(lay,'w') do |f|
   f.printf '$!GLOBALLINEPLOT LEGEND{BOX{COLOR = WHITE}}'+"\n"
   f.printf '$!GLOBALLINEPLOT LEGEND{BOX{MARGIN = 4}}'+"\n"
   f.printf '$!GLOBALLINEPLOT LEGEND{ANCHORALIGNMENT = TOPRIGHT}'+"\n"
-  f.printf '$!GLOBALLINEPLOT LEGEND{XYPOS{X = 85}}'+"\n"
+  f.printf '$!GLOBALLINEPLOT LEGEND{XYPOS{X = 95}}'+"\n"
   f.printf '$!GLOBALLINEPLOT LEGEND{XYPOS{Y = 90}}'+"\n"
 
   axisdetail = '$!XYLINEAXIS XDETAIL 1 '
