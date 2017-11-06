@@ -8,11 +8,19 @@ varpos['cdp']=6
 varpos['cdv']=7
 varpos['cmy']=8
 
-mcr = "om-cl.lay"
+ranges=Hash.new
+ranges['cl']=[0.22,0.28]
+ranges['cdp']=[0.01,0.02]
+ranges['cdv']=[0.004,0.010]
+ranges['cmy']=[-0.22,-0.14]
+
+mcr = ARGV[0] || "om-cl.lay"
 var=mcr.sub(/.*-/,'').sub(/\..*/,'')
 puts var
 y = varpos[var]
 puts y
+range = ranges[var]
+puts range
 
 dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "SFE_LP4.dat"'
 
@@ -84,9 +92,9 @@ File.open(mcr,'w') do |f|
   #  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   #  f.printf axisdetail+"{TITLE{TEXT = 'PL (dB)'}}"+"\n"
   f.printf axisdetail+"{TITLE{OFFSET = 8}}"+"\n"
-  f.printf axisdetail+"{RANGEMIN =  0.20}"+"\n"
-  f.printf axisdetail+"{RANGEMAX =  0.28}"+"\n"
-  f.printf axisdetail+"{GRSPACING = 0.02}"+"\n"
+  f.printf axisdetail+"{RANGEMIN =  #{range[0]}}"+"\n"
+  f.printf axisdetail+"{RANGEMAX =  #{range[1]}}"+"\n"
+#  f.printf axisdetail+"{GRSPACING = 0.02}"+"\n"
 
   f.printf '$!FRAMELAYOUT'+"\n"
   f.printf "  SHOWBORDER = NO\n"
