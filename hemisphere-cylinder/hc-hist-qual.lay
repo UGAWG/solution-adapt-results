@@ -1,5 +1,5 @@
 #!MC 1200
-$!READDATASET '"./sa-m06-a00-fun3d/hsc03-qual.tec" "./sa-m06-a00-fun3d/hsc10-qual.tec" "./sa-m06-a00-fun3d/epic/hsc03.epicICS-qual.tec" "./sa-m06-a00-fun3d/epic/hsc10.epicICS-qual.tec" "./sa-m06-a00-fun3d/epic/hsc03.epicICSM-qual.tec" "./sa-m06-a00-fun3d/epic/hsc10.epicICSM-qual.tec" "./sa-m06-a00-fun3d/refine/refine-hsc03-qual.tec" "./sa-m06-a00-fun3d/refine/refine-hsc10-qual.tec" "./pragmatic/hsc03_out-qual.tec" "./pragmatic/hsc10_out-qual.tec" "./sa-m06-a00-fun3d/fefloa/hsc03-fefloa-qual.tec" "./sa-m06-a00-fun3d/fefloa/hsc10-fefloa-qual.tec" "./sa-m06-a00-fun3d/omega_h/hsc03-qual.tec"'
+$!READDATASET '"./sa-m06-a00-fun3d/hsc03-qual.tec" "./sa-m06-a00-fun3d/hsc10-qual.tec" "./sa-m06-a00-fun3d/epic/hsc03.epicICS-qual.tec" "./sa-m06-a00-fun3d/epic/hsc10.epicICS-qual.tec" "./sa-m06-a00-fun3d/epic/hsc03.epicICSM-qual.tec" "./sa-m06-a00-fun3d/epic/hsc10.epicICSM-qual.tec" "./sa-m06-a00-fun3d/refine/refine-hsc03-qual.tec" "./sa-m06-a00-fun3d/refine/refine-hsc10-qual.tec" "./pragmatic/hsc03_out_new-qual.tec" "./pragmatic/hsc10_out_new-qual.tec" "./sa-m06-a00-fun3d/fefloa/hsc03-fefloa-qual.tec" "./sa-m06-a00-fun3d/fefloa/hsc10-fefloa-qual.tec" "./sa-m06-a00-fun3d/omega_h/hsc03-qual.tec" "./sa-m06-a00-fun3d/omega_h/hsc10-qual.tec"'
   INITIALPLOTTYPE = XYLINE
 $!DELETELINEMAPS  [1-20]
 $!CREATELINEMAP
@@ -184,6 +184,20 @@ $!LINEMAP [13] SYMBOLS{SIZE = 1.5}
 $!LINEMAP [13] SYMBOLS{LINETHICKNESS = 0.4}
 $!LINEMAP [13] ASSIGN{SHOWINLEGEND = AUTO}
 $!ACTIVELINEMAPS += [13]
+$!CREATELINEMAP
+$!LINEMAP [14] ASSIGN{XAXISVAR = 1}
+$!LINEMAP [14] ASSIGN{YAXISVAR = 2}
+$!LINEMAP [14] ASSIGN{ZONE = 14}
+$!LINEMAP [14] NAME = 'Omega_h 100K'
+$!LINEMAP [14] LINES{COLOR = PURPLE}
+$!LINEMAP [14] LINES{LINEPATTERN = SOLID}
+$!LINEMAP [14] LINES{LINETHICKNESS = 0.4}
+$!LINEMAP [14] SYMBOLS{COLOR = PURPLE}
+$!LINEMAP [14] SYMBOLS{FILLCOLOR = PURPLE}
+$!LINEMAP [14] SYMBOLS{SIZE = 1.5}
+$!LINEMAP [14] SYMBOLS{LINETHICKNESS = 0.4}
+$!LINEMAP [14] ASSIGN{SHOWINLEGEND = AUTO}
+$!ACTIVELINEMAPS += [14]
 $!LINEPLOTLAYERS SHOWSYMBOLS = NO
 $!GLOBALLINEPLOT LEGEND{SHOW = YES}
 $!GLOBALLINEPLOT LEGEND{TEXTSHAPE{HEIGHT = 3}}

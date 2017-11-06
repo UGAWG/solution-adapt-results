@@ -9,11 +9,12 @@ rootlab<<['./sa-m06-a00-fun3d/epic/hsc03.epicICSM','EPIC-ICSM 30K']
 rootlab<<['./sa-m06-a00-fun3d/epic/hsc10.epicICSM','EPIC-ICSM 100K']
 rootlab<<['./sa-m06-a00-fun3d/refine/refine-hsc03','refine 30K']
 rootlab<<['./sa-m06-a00-fun3d/refine/refine-hsc10','refine 100K']
-rootlab<<['./pragmatic/hsc03_out','Pragmatic 30K']
-rootlab<<['./pragmatic/hsc10_out','Pragmatic 100K']
+rootlab<<['./pragmatic/hsc03_out_new','Pragmatic 30K']
+rootlab<<['./pragmatic/hsc10_out_new','Pragmatic 100K']
 rootlab<<['./sa-m06-a00-fun3d/fefloa/hsc03-fefloa','Feflo.a 30K']
 rootlab<<['./sa-m06-a00-fun3d/fefloa/hsc10-fefloa','Feflo.a 100K']
 rootlab<<['./sa-m06-a00-fun3d/omega_h/hsc03','Omega_h 30K']
+rootlab<<['./sa-m06-a00-fun3d/omega_h/hsc10','Omega_h 100K']
 
 metric = 'qual'
 lay="hc-hist-#{metric}.lay"
