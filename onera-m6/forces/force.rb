@@ -47,7 +47,7 @@ File.open(mcr,'w') do |f|
 
   f.printf '$!LINEPLOTLAYERS SHOWSYMBOLS = NO'+"\n"
 
-  f.printf '$!GLOBALLINEPLOT LEGEND{SHOW = NO}'+"\n"
+  f.printf '$!GLOBALLINEPLOT LEGEND{SHOW = YES}'+"\n"
   f.printf '$!GLOBALLINEPLOT LEGEND{TEXTSHAPE{HEIGHT = 2}}'+"\n"
   f.printf '$!GLOBALLINEPLOT LEGEND{BOX{BOXTYPE = FILLED}}'+"\n"
   f.printf '$!GLOBALLINEPLOT LEGEND{BOX{COLOR = WHITE}}'+"\n"
@@ -60,9 +60,9 @@ File.open(mcr,'w') do |f|
   #  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   #  f.printf axisdetail+"{TITLE{TEXT = 'h'}}"+"\n"
   f.printf axisdetail+"{TITLE{OFFSET = 8}}"+"\n"
-  f.printf axisdetail+"{RANGEMIN = 0.0}"+"\n"
-  f.printf axisdetail+"{RANGEMAX = 0.025}"+"\n"
-  f.printf axisdetail+"{GRSPACING = 0.005}"+"\n"
+  f.printf axisdetail+"{RANGEMIN = 0.000}"+"\n"
+  f.printf axisdetail+"{RANGEMAX = 0.040}"+"\n"
+  f.printf axisdetail+"{GRSPACING = 0.010}"+"\n"
 
   axisdetail = '$!XYLINEAXIS YDETAIL 1 '
   #  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
@@ -72,4 +72,13 @@ File.open(mcr,'w') do |f|
   f.printf axisdetail+"{RANGEMAX =  0.28}"+"\n"
   f.printf axisdetail+"{GRSPACING = 0.02}"+"\n"
 
+  f.printf '$!FRAMELAYOUT'+"\n"
+  f.printf "  SHOWBORDER = NO\n"
+  f.printf "  SHOWHEADER = NO\n"
+  f.printf "  XYPOS{ X = 0.25 }\n"
+  f.printf "  XYPOS{ Y =0.25 }\n"
+  f.printf "  WIDTH = 10.5\n"
+  f.printf "  HEIGHT = 8\n"
+  
+  
 end
