@@ -73,7 +73,7 @@ File.open(lay,'w') do |f|
   axisdetail = '$!XYLINEAXIS XDETAIL 1 '
   f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   f.printf axisdetail+"{TITLE{TEXT = 'Mean Ratio'}}"+"\n"
-  f.printf axisdetail+"{TITLE{OFFSET = 8}}"+"\n"
+  f.printf axisdetail+"{TITLE{OFFSET = 6}}"+"\n"
   f.printf axisdetail+"{RANGEMIN = 0}"+"\n"
   f.printf axisdetail+"{RANGEMAX = 4}"+"\n"
   f.printf axisdetail+"{GRSPACING = 0.5}"+"\n"
@@ -81,7 +81,7 @@ File.open(lay,'w') do |f|
   axisdetail = '$!XYLINEAXIS YDETAIL 1 '
   f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   f.printf axisdetail+"{TITLE{TEXT = 'Normalized Count'}}"+"\n"
-  f.printf axisdetail+"{TITLE{OFFSET = 10}}"+"\n"
+  f.printf axisdetail+"{TITLE{OFFSET = 6}}"+"\n"
   f.printf axisdetail+"{RANGEMIN = 0}"+"\n"
   f.printf axisdetail+"{RANGEMAX = 2}"+"\n"
   f.printf axisdetail+"{GRSPACING = 0.2}"+"\n"
