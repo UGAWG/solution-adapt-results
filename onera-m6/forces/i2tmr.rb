@@ -7,7 +7,6 @@ lines=IO.readlines(inp)
 
 File.open(out,"w") do |o|
   o.puts 'VARIABLES="N","h=N^(-1/3)","h^2=N^(-2/3)","CL","CD","CDp","CDv","CMy" "max_MUT"'
-  o.puts lines[1]
   n = lines.size
   n.times do |i|
     line = lines[i]
