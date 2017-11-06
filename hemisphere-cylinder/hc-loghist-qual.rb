@@ -77,6 +77,7 @@ File.open(lay,'w') do |f|
   f.printf axisdetail+"{COORDSCALE = LOG}"+"\n"
   f.printf axisdetail+"{RANGEMIN = 0.001}"+"\n"
   f.printf axisdetail+"{RANGEMAX = 1}"+"\n"
+  f.printf axisdetail+"{TICKLABEL{OFFSET = 2}}"+"\n"
 
   axisdetail = '$!XYLINEAXIS YDETAIL 1 '
   f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
