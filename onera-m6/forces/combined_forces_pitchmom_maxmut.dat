@@ -1,4 +1,4 @@
-variables="N","h=N^(-1/3)","h^2=(N)^(-2/3)","CL","CD","CDp","CDv","CMy" "max_MUT"
+VARIABLES="N","h=N^(-1/3)","h^2=N^(-2/3)","CL","CD","CDp","CDv","CMy" "max_MUT"
 #Case 2308, AoA=3.06 deg ONERA M6 wing
 ZONE, t="USM3D SA-neg, FO turb, Prism_Hex"
 69206016 0.24357E-02 0.59325E-05 2.693477E-01  1.698167E-02  1.1680187E-02 5.301483E-03 -1.897961E-01 1.3862471E+03
