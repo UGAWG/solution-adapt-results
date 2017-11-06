@@ -14,11 +14,12 @@ File.open(out,"w") do |o|
     cols=line.split
     nnodes = cols[1]
     h1 = cols[0]
-    h2 = h1**2
+    h2 = h1.to_f**2
     cl=cols[5]
     cd=cols[2]
-    cdv=cols[3]
-    cmy=cols[4]
+    cdp=cols[3]
+    cdv=cols[4]
+    cmy=cols[6]
     o.puts [nnodes,h1,h2,cl,cd,cdp,cdv,cmy,0].join(" ")
   end
 end
