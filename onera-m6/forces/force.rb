@@ -8,7 +8,8 @@ dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_d
 
 colors= %w(BLUE RED CUSTOM28 CUSTOM3 CUSTOM32 PURPLE)
 symbols=%w(CIRCLE SQUARE DIAMOND GRAD RTRI LTRI)
-patterns=%w(DASHED DASHDOT DOTTED LONGDASH DASHDOTDOT)
+patterns=%w(SOLID DASHED DASHDOT DOTTED LONGDASH DASHDOTDOT)
+pat=%w(DASHED SOLID SOLID)
 
 File.open(mcr,'w') do |f|
   f.printf '#!MC 1200'+"\n"
@@ -19,10 +20,14 @@ File.open(mcr,'w') do |f|
   f.printf '$!DELETELINEMAPS  [1-20]'+"\n"
 
   x = 2
-
+  pat=%w(DASHED SOLID SOLID)
+  count=[5,4,4]
+  
   z = 0
   m = 0
-  [5,4,4].each do |n|
+  3.times do |g|
+    n=count[g]
+    p=pat[g]
     n.times do |i|
       c = colors[i]
       f.printf '$!CREATELINEMAP'+"\n"
@@ -34,6 +39,7 @@ File.open(mcr,'w') do |f|
       f.printf linemap+"ASSIGN{ZONE = #{z}}\n"
       f.printf linemap+"NAME = '&ZN&'\n"
       f.printf linemap+"LINES{COLOR = #{c}}\n"
+      f.printf linemap+"LINES{LINEPATTERN = #{p}}\n"
       f.printf linemap+"LINES{LINETHICKNESS = 0.4}\n"
       f.printf linemap+"SYMBOLS{COLOR = #{c}}\n"
       f.printf linemap+"SYMBOLS{FILLCOLOR = #{c}}\n"
@@ -76,7 +82,7 @@ File.open(mcr,'w') do |f|
   f.printf "  SHOWBORDER = NO\n"
   f.printf "  SHOWHEADER = NO\n"
   f.printf "  XYPOS{ X = 0.25 }\n"
-  f.printf "  XYPOS{ Y =0.25 }\n"
+  f.printf "  XYPOS{ Y = 0.25 }\n"
   f.printf "  WIDTH = 10.5\n"
   f.printf "  HEIGHT = 8\n"
   
