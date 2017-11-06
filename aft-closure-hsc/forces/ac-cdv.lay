@@ -1,0 +1,838 @@
+#!MC 1410
+$!VarSet |LFDSFN1| = '"ggns_grid_cnv.plt"'
+$!VarSet |LFDSVL1| = '"MESH" "NODES" "NODESsurf" "NODESFF" "Yplus" "Cell-deg" "CL" "CD" "CDv" "CM" "Iter" "Res"'
+$!SETSTYLEBASE FACTORY
+$!PLOTOPTIONS 
+  SUBDIVIDEALLCELLS = NO
+$!GLOBALPAPER 
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    A3
+      {
+      WIDTH = 11.693
+      HEIGHT = 16.535
+      }
+    A4
+      {
+      WIDTH = 8.2677
+      HEIGHT = 11.693
+      }
+    }
+$!PAGE 
+  NAME = 'Untitled'
+  PAPERATTRIBUTES
+    {
+    BACKGROUNDCOLOR = WHITE
+    ISTRANSPARENT = YES
+    ORIENTPORTRAIT = NO
+    SHOWGRID = YES
+    SHOWRULER = YES
+    SHOWPAPER = YES
+    PAPERSIZE = LETTER
+    RULERSPACING = ONEINCH
+    PAPERGRIDSPACING = HALFINCH
+    REGIONINWORKAREA
+      {
+      X1 = 0.25
+      Y1 = 0.25
+      X2 = 10.75
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|'
+  INITIALPLOTTYPE = XYLINE
+  INCLUDETEXT = NO
+  INCLUDEGEOM = NO
+  ASSIGNSTRANDIDS = YES
+  VARLOADMODE = BYNAME
+  VARNAMELIST = '|LFDSVL1|'
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!ALTERDATA 
+  EQUATION = '{h} = max({NODES},1)**(-1.0/3.0)'
+$!ALTERDATA 
+  EQUATION = '{CDp} = {CD}-{CDv}'
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  SHOWHEADER = NO
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 0.25
+    Y = 0.25
+    }
+  WIDTH = 10.5
+  HEIGHT = 8
+$!THREEDAXIS 
+  ASPECTRATIOLIMIT = 10000
+  BOXASPECTRATIOLIMIT = 10000
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001'
+$!GLOBALTIME 
+  SOLUTIONTIME = 0
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-24]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    BOX
+      {
+      BOXTYPE = NONE
+      MARGIN = 0
+      }
+    XYPOS
+      {
+      X = 15
+      Y = 89
+      }
+    ANCHORALIGNMENT = TOPLEFT
+    }
+$!LINEMAP  [1]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [2]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [3]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 3
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = GREEN
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [4]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 4
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLUE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [5]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 5
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [6]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 6
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = CUSTOM1
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM1
+    FILLCOLOR = CUSTOM1
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM1
+    }
+$!LINEMAP  [7]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 7
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = CUSTOM3
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM3
+    }
+$!LINEMAP  [8]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 8
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = PURPLE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
+    }
+  ERRORBARS
+    {
+    COLOR = PURPLE
+    }
+$!LINEMAP  [9]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 9
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLACK
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [10]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 10
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [11]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 11
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = GREEN
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [12]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 12
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = BLUE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [13]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 13
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = CUSTOM1
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM1
+    FILLCOLOR = CUSTOM1
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM1
+    }
+$!LINEMAP  [14]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 14
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLACK
+    FILLCOLOR = CUSTOM3
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM3
+    }
+$!LINEMAP  [15]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 15
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [16]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 16
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = PURPLE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
+    }
+  ERRORBARS
+    {
+    COLOR = PURPLE
+    }
+$!LINEMAP  [17]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 17
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [18]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 18
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!LINEMAP  [19]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 19
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLACK
+    FILLCOLOR = BLUE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    COLOR = BLUE
+    }
+$!LINEMAP  [20]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 20
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = CUSTOM3
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [21]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 21
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLUE
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLUE
+    FILLCOLOR = CUSTOM1
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM1
+    FILLCOLOR = CUSTOM1
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM1
+    }
+$!LINEMAP  [22]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 22
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = CUSTOM3
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM3
+    FILLCOLOR = CUSTOM3
+    }
+  ERRORBARS
+    {
+    COLOR = CUSTOM3
+    }
+$!LINEMAP  [23]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 23
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = GREEN
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = PURPLE
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = PURPLE
+    FILLCOLOR = PURPLE
+    }
+  ERRORBARS
+    {
+    COLOR = PURPLE
+    }
+$!LINEMAP  [24]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 24
+    XAXISVAR = 13
+    YAXISVAR = 9
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINETHICKNESS = 0.4
+    }
+  SYMBOLS
+    {
+    COLOR = BLACK
+    FILLCOLOR = RED
+    SIZE = 1.5
+    LINETHICKNESS = 0.4
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 0.025000000000000001388
+    GRSPACING = 0.005
+    TITLE
+      {
+      OFFSET = 6
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = 0.0011779805645346641541
+    RANGEMAX = 0.028602043485175816795
+    AUTOGRID = NO
+    GRSPACING = 0.001
+    TICKLABEL
+      {
+      NUMFORMAT
+        {
+        FORMATTING = FIXEDFLOAT
+        TIMEDATEFORMAT = ''
+        }
+      }
+    TITLE
+      {
+      OFFSET = 10
+      }
+    }
+$!LINEPLOTLAYERS 
+  SHOWSYMBOLS = YES
+$!FRAMECONTROL ACTIVATEBYNUMBER
+  FRAME = 1
+$!SETSTYLEBASE CONFIG
