@@ -1,8 +1,18 @@
 #!/usr/bin/env ruby
 
+varpos=Hash.new
+varpos['h']=2
+varpos['cl']=4
+varpos['cd']=5
+varpos['cdp']=6
+varpos['cdv']=7
+varpos['cmy']=8
 
 mcr = "om-cl.lay"
-y = 4
+var=mcr.sub(/.*-/,'').sub(/\..*/,'')
+puts var
+y = varpos[var]
+puts y
 
 dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "SFE_LP4.dat"'
 
@@ -19,7 +29,7 @@ File.open(mcr,'w') do |f|
 
   f.printf '$!DELETELINEMAPS  [1-20]'+"\n"
 
-  x = 2
+  x = varpos['h']
   pat=%w(DASHED SOLID SOLID)
   count=[5,4,4]
   
