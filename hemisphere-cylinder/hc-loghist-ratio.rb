@@ -72,7 +72,7 @@ File.open(lay,'w') do |f|
 
   axisdetail = '$!XYLINEAXIS XDETAIL 1 '
   f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
-  f.printf axisdetail+"{TITLE{TEXT = 'Mean Ratio'}}"+"\n"
+  f.printf axisdetail+"{TITLE{TEXT = 'Edge Length in Metric'}}"+"\n"
   f.printf axisdetail+"{TITLE{OFFSET = 6}}"+"\n"
   f.printf axisdetail+"{COORDSCALE = LOG}"+"\n"
   f.printf axisdetail+"{RANGEMIN = 0.01}"+"\n"
