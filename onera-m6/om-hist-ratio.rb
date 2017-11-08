@@ -13,6 +13,7 @@ rootlab<<['./pragmatic/onera03_out_new','Pragmatic 30K']
 rootlab<<['./pragmatic/onera10_out_new','Pragmatic 100K']
 rootlab<<['./sa-m084-a306-fun3d/fefloa/onera03-fefloa','Feflo.a 30K']
 rootlab<<['./sa-m084-a306-fun3d/fefloa/onera10-fefloa','Feflo.a 100K']
+rootlab<<['./sa-m084-a306-fun3d/omega_h/onera03','Omega_h 30K']
 
 metric = 'ratio'
 lay="om-hist-#{metric}.lay"

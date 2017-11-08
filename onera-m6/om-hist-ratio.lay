@@ -1,5 +1,5 @@
 #!MC 1200
-$!READDATASET '"./sa-m084-a306-fun3d/onera03-ratio.tec" "./sa-m084-a306-fun3d/onera10-ratio.tec" "./sa-m084-a306-fun3d/epic/onera03.epicICS-ratio.tec" "./sa-m084-a306-fun3d/epic/onera10.epicICS-ratio.tec" "./sa-m084-a306-fun3d/epic/onera03.epicICSM-ratio.tec" "./sa-m084-a306-fun3d/epic/onera10.epicICSM-ratio.tec" "./sa-m084-a306-fun3d/refine/refine-onera03-ratio.tec" "./sa-m084-a306-fun3d/refine/refine-onera10-ratio.tec" "./pragmatic/onera03_out_new-ratio.tec" "./pragmatic/onera10_out_new-ratio.tec" "./sa-m084-a306-fun3d/fefloa/onera03-fefloa-ratio.tec" "./sa-m084-a306-fun3d/fefloa/onera10-fefloa-ratio.tec"'
+$!READDATASET '"./sa-m084-a306-fun3d/onera03-ratio.tec" "./sa-m084-a306-fun3d/onera10-ratio.tec" "./sa-m084-a306-fun3d/epic/onera03.epicICS-ratio.tec" "./sa-m084-a306-fun3d/epic/onera10.epicICS-ratio.tec" "./sa-m084-a306-fun3d/epic/onera03.epicICSM-ratio.tec" "./sa-m084-a306-fun3d/epic/onera10.epicICSM-ratio.tec" "./sa-m084-a306-fun3d/refine/refine-onera03-ratio.tec" "./sa-m084-a306-fun3d/refine/refine-onera10-ratio.tec" "./pragmatic/onera03_out_new-ratio.tec" "./pragmatic/onera10_out_new-ratio.tec" "./sa-m084-a306-fun3d/fefloa/onera03-fefloa-ratio.tec" "./sa-m084-a306-fun3d/fefloa/onera10-fefloa-ratio.tec" "./sa-m084-a306-fun3d/omega_h/onera03-ratio.tec"'
   INITIALPLOTTYPE = XYLINE
 $!DELETELINEMAPS  [1-20]
 $!CREATELINEMAP
@@ -170,6 +170,20 @@ $!LINEMAP [12] SYMBOLS{SIZE = 1.5}
 $!LINEMAP [12] SYMBOLS{LINETHICKNESS = 0.4}
 $!LINEMAP [12] ASSIGN{SHOWINLEGEND = AUTO}
 $!ACTIVELINEMAPS += [12]
+$!CREATELINEMAP
+$!LINEMAP [13] ASSIGN{XAXISVAR = 1}
+$!LINEMAP [13] ASSIGN{YAXISVAR = 2}
+$!LINEMAP [13] ASSIGN{ZONE = 13}
+$!LINEMAP [13] NAME = 'Omega_h 30K'
+$!LINEMAP [13] LINES{COLOR = PURPLE}
+$!LINEMAP [13] LINES{LINEPATTERN = SOLID}
+$!LINEMAP [13] LINES{LINETHICKNESS = 0.4}
+$!LINEMAP [13] SYMBOLS{COLOR = PURPLE}
+$!LINEMAP [13] SYMBOLS{FILLCOLOR = PURPLE}
+$!LINEMAP [13] SYMBOLS{SIZE = 1.5}
+$!LINEMAP [13] SYMBOLS{LINETHICKNESS = 0.4}
+$!LINEMAP [13] ASSIGN{SHOWINLEGEND = AUTO}
+$!ACTIVELINEMAPS += [13]
 $!LINEPLOTLAYERS SHOWSYMBOLS = NO
 $!GLOBALLINEPLOT LEGEND{SHOW = YES}
 $!GLOBALLINEPLOT LEGEND{TEXTSHAPE{HEIGHT = 3}}
