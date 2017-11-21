@@ -831,7 +831,7 @@ $!XYLINEAXIS
     TITLE
       {
       TITLEMODE = USETEXT
-      TEXT = 'C<sub>Dp</sub>'
+      TEXT = 'C<sub>Dv</sub>'
       OFFSET = 10
       }
     }
