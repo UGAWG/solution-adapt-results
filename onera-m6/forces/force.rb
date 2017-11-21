@@ -14,6 +14,12 @@ ranges['cdp']=[0.01,0.02]
 ranges['cdv']=[0.004,0.010]
 ranges['cmy']=[-0.22,-0.14]
 
+ylabs=Hash.new
+ylabs['cl']='C<sub>L</sub>'
+ylabs['cdp']='C<sub>Dp</sub>'
+ylabs['cdv']='C<sub>Dp</sub>'
+ylabs['cmy']='C<sub>My</sub>'
+
 mcr = ARGV[0] || "om-cl.lay"
 var=mcr.sub(/.*-/,'').sub(/\..*/,'')
 puts var
@@ -21,6 +27,8 @@ y = varpos[var]
 puts y
 range = ranges[var]
 puts range
+ylab = ylabs[var]
+puts ylab
 
 dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
 
@@ -83,7 +91,9 @@ File.open(mcr,'w') do |f|
   axisdetail = '$!XYLINEAXIS XDETAIL 1 '
   #  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   #  f.printf axisdetail+"{TITLE{TEXT = 'h'}}"+"\n"
-  f.printf axisdetail+"{TITLE{OFFSET = 8}}"+"\n"
+  f.printf axisdetail+"{TITLE{OFFSET = 5}}"+"\n"
+  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
+  f.printf axisdetail+"{TITLE{TEXT = 'h=N<sup>-1/3'}}"+"\n"
   f.printf axisdetail+"{RANGEMIN = 0.000}"+"\n"
   f.printf axisdetail+"{RANGEMAX = 0.040}"+"\n"
   f.printf axisdetail+"{GRSPACING = 0.010}"+"\n"
@@ -92,6 +102,8 @@ File.open(mcr,'w') do |f|
   #  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
   #  f.printf axisdetail+"{TITLE{TEXT = 'PL (dB)'}}"+"\n"
   f.printf axisdetail+"{TITLE{OFFSET = 10}}"+"\n"
+  f.printf axisdetail+"{TITLE{TITLEMODE = USETEXT}}"+"\n"
+  f.printf axisdetail+"{TITLE{TEXT = '"+ylab+"'}}"+"\n"
   f.printf axisdetail+"{RANGEMIN =  #{range[0]}}"+"\n"
   f.printf axisdetail+"{RANGEMAX =  #{range[1]}}"+"\n"
   #  f.printf axisdetail+"{GRSPACING = 0.02}"+"\n"
