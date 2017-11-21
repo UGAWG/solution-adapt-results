@@ -809,7 +809,7 @@ $!XYLINEAXIS
     TITLE
       {
       TITLEMODE = USETEXT
-      TEXT = 'h=N^(-1/3)'
+      TEXT = 'h=N<sup>-1/3'
       OFFSET = 6
       }
     }
@@ -830,6 +830,8 @@ $!XYLINEAXIS
       }
     TITLE
       {
+      TITLEMODE = USETEXT
+      TEXT = 'C<sub>Dp</sub>'
       OFFSET = 10
       }
     }
