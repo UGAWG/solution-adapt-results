@@ -43,6 +43,7 @@
   cf_x    = .true.
   cf_y    = .true.
   cf_z    = .true.
+  slen    = .true.
 /
 &volume_output_variables
  export_to='sol'
