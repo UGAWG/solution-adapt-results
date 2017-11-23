@@ -17,7 +17,7 @@ ranges['cmy']=[-0.22,-0.14]
 ylabs=Hash.new
 ylabs['cl']='C<sub>L</sub>'
 ylabs['cdp']='C<sub>Dp</sub>'
-ylabs['cdv']='C<sub>Dp</sub>'
+ylabs['cdv']='C<sub>Dv</sub>'
 ylabs['cmy']='C<sub>My</sub>'
 
 mcr = ARGV[0] || "om-cl.lay"
