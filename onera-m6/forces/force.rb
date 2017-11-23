@@ -30,7 +30,7 @@ puts range
 ylab = ylabs[var]
 puts ylab
 
-dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
+dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift-dist.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
 
 colors= %w(BLUE RED CUSTOM28 CUSTOM3 CUSTOM32 PURPLE)
 symbols=%w(CIRCLE SQUARE DIAMOND GRAD RTRI LTRI)
