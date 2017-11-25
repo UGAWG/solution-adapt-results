@@ -1116,7 +1116,7 @@ $!XYLINEAXIS
       {
       TITLEMODE = USETEXT
       TEXT = 'C<sub>Dp</sub>'
-      OFFSET = 9
+      OFFSET = 10
       }
     }
 $!LINEPLOTLAYERS 
