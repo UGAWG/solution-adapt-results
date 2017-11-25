@@ -18,7 +18,7 @@ ylabs=Hash.new
 ylabs['cl']='C<sub>L</sub>'
 ylabs['cdp']='C<sub>Dp</sub>'
 ylabs['cdv']='C<sub>Dv</sub>'
-ylabs['cmy']='C<sub>My</sub>'
+ylabs['cmy']='C<sub>my</sub>'
 
 mcr = ARGV[0] || "om-cl.lay"
 var=mcr.sub(/.*-/,'').sub(/\..*/,'')
