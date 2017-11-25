@@ -1,6 +1,6 @@
 #!MC 1410
 $!VarSet |LFDSFN1| = '"HC_combined_forces_pitchmom_maxmut.dat" "hsc-ws-l2c.dat" "hsc-ws-l2.dat" "hsc-ws-l4.dat"'
-$!VarSet |LFDSVL1| = '"N","h=N^(-1/3)","h^2=N^(-2/3)","CL","CD","CDp","CDv","CMy" "max_MUT"'
+$!VarSet |LFDSVL1| = '"N" "h=N^(-1/3)" "h^2=N^(-2/3)" "CL" "CD" "CDp" "CDv" "CMy" "max_MUT"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
   SUBDIVIDEALLCELLS = NO
@@ -103,7 +103,7 @@ $!LINEMAP  [1]
     {
     ZONE = 1
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -133,7 +133,7 @@ $!LINEMAP  [2]
     {
     ZONE = 2
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -163,7 +163,7 @@ $!LINEMAP  [3]
     {
     ZONE = 3
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -193,7 +193,7 @@ $!LINEMAP  [4]
     {
     ZONE = 4
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -223,7 +223,7 @@ $!LINEMAP  [5]
     {
     ZONE = 5
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -253,7 +253,7 @@ $!LINEMAP  [6]
     {
     ZONE = 6
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -283,7 +283,7 @@ $!LINEMAP  [7]
     {
     ZONE = 7
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -313,7 +313,7 @@ $!LINEMAP  [8]
     {
     ZONE = 8
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -343,7 +343,7 @@ $!LINEMAP  [9]
     {
     ZONE = 9
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -373,7 +373,7 @@ $!LINEMAP  [10]
     {
     ZONE = 10
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -403,7 +403,7 @@ $!LINEMAP  [11]
     {
     ZONE = 11
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -433,7 +433,7 @@ $!LINEMAP  [12]
     {
     ZONE = 12
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -463,7 +463,7 @@ $!LINEMAP  [13]
     {
     ZONE = 13
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -493,7 +493,7 @@ $!LINEMAP  [14]
     {
     ZONE = 14
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -523,7 +523,7 @@ $!LINEMAP  [15]
     {
     ZONE = 15
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -553,7 +553,7 @@ $!LINEMAP  [16]
     {
     ZONE = 16
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -583,7 +583,7 @@ $!LINEMAP  [17]
     {
     ZONE = 17
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -613,7 +613,7 @@ $!LINEMAP  [18]
     {
     ZONE = 18
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -643,7 +643,7 @@ $!LINEMAP  [19]
     {
     ZONE = 19
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -673,7 +673,7 @@ $!LINEMAP  [20]
     {
     ZONE = 20
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -703,7 +703,7 @@ $!LINEMAP  [21]
     {
     ZONE = 21
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -733,7 +733,7 @@ $!LINEMAP  [22]
     {
     ZONE = 22
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -763,7 +763,7 @@ $!LINEMAP  [23]
     {
     ZONE = 23
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -793,7 +793,7 @@ $!LINEMAP  [24]
     {
     ZONE = 24
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -823,7 +823,7 @@ $!LINEMAP  [25]
     {
     ZONE = 25
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -853,7 +853,7 @@ $!LINEMAP  [26]
     {
     ZONE = 26
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -883,7 +883,7 @@ $!LINEMAP  [27]
     {
     ZONE = 27
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -913,7 +913,7 @@ $!LINEMAP  [28]
     {
     ZONE = 28
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -943,7 +943,7 @@ $!LINEMAP  [29]
     {
     ZONE = 29
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -973,7 +973,7 @@ $!LINEMAP  [30]
     {
     ZONE = 30
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -1003,7 +1003,7 @@ $!LINEMAP  [31]
     {
     ZONE = 31
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -1032,7 +1032,7 @@ $!LINEMAP  [32]
     {
     ZONE = 32
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -1061,7 +1061,7 @@ $!LINEMAP  [33]
     {
     ZONE = 33
     XAXISVAR = 2
-    YAXISVAR = 6
+    YAXISVAR = 7
     }
   LINES
     {
@@ -1101,9 +1101,9 @@ $!XYLINEAXIS
 $!XYLINEAXIS 
   YDETAIL 1
     {
-    RANGEMIN = -0.0010000000000000000208
-    RANGEMAX = 0.0030000000000000000625
-    GRSPACING = 0.001
+    RANGEMIN = 0.0085
+    RANGEMAX = 0.011
+    GRSPACING = 0.005
     TICKLABEL
       {
       NUMFORMAT
@@ -1115,7 +1115,7 @@ $!XYLINEAXIS
     TITLE
       {
       TITLEMODE = USETEXT
-      TEXT = 'C<sub>Dp</sub>'
+      TEXT = 'C<sub>Dv</sub>'
       OFFSET = 10
       }
     }

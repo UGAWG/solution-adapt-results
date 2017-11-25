@@ -17,8 +17,8 @@ ranges['cmy']=[-0.22,-0.14]
 ylabs=Hash.new
 ylabs['cl']='C<sub>L</sub>'
 ylabs['cdp']='C<sub>Dp</sub>'
-ylabs['cdv']='C<sub>Dp</sub>'
-ylabs['cmy']='C<sub>My</sub>'
+ylabs['cdv']='C<sub>Dv</sub>'
+ylabs['cmy']='C<sub>my</sub>'
 
 mcr = ARGV[0] || "om-cl.lay"
 var=mcr.sub(/.*-/,'').sub(/\..*/,'')
@@ -30,7 +30,7 @@ puts range
 ylab = ylabs[var]
 puts ylab
 
-dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
+dat='"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift-dist.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
 
 colors= %w(BLUE RED CUSTOM28 CUSTOM3 CUSTOM32 PURPLE)
 symbols=%w(CIRCLE SQUARE DIAMOND GRAD RTRI LTRI)

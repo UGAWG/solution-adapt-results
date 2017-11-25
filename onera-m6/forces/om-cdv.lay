@@ -1,5 +1,5 @@
 #!MC 1200
-$!READDATASET '"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
+$!READDATASET '"combined_forces_pitchmom_maxmut.dat" "GGNS_LP2.dat" "GGNS_LP4.dat" "GGNS_drag.dat" "GGNS_lift.dat" "FUN3D_LP2C.dat" "FUN3D_LP2.dat" "FUN3D_LP4.dat" "fun3d-fv-ggns-lift-dist.dat" "Wolf_LP2.dat" "Wolf_LP4.dat" "Wolf_Drag.dat" "Wolf_EPIC.dat"'
   INITIALPLOTTYPE = XYLINE
 $!DELETELINEMAPS  [1-20]
 $!CREATELINEMAP
@@ -257,7 +257,7 @@ $!XYLINEAXIS XDETAIL 1 {RANGEMAX = 0.040}
 $!XYLINEAXIS XDETAIL 1 {GRSPACING = 0.010}
 $!XYLINEAXIS YDETAIL 1 {TITLE{OFFSET = 10}}
 $!XYLINEAXIS YDETAIL 1 {TITLE{TITLEMODE = USETEXT}}
-$!XYLINEAXIS YDETAIL 1 {TITLE{TEXT = 'C<sub>Dp</sub>'}}
+$!XYLINEAXIS YDETAIL 1 {TITLE{TEXT = 'C<sub>Dv</sub>'}}
 $!XYLINEAXIS YDETAIL 1 {RANGEMIN =  0.004}
 $!XYLINEAXIS YDETAIL 1 {RANGEMAX =  0.01}
 $!XYLINEAXIS YDETAIL 1 {TICKLABEL{NUMFORMAT{FORMATTING= FIXEDFLOAT}}}
