@@ -1,5 +1,5 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"oneram6_LP_154K_GGNS.plt" "oneram6_LP_154K_SFE.plt" "oneram6_LP_154K_FUN3D.plt"'
+$!VarSet |LFDSFN1| = '"oneram6_LP_154K_GGNS.plt" "oneram6_LP_154K_FUNDIST.plt" "oneram6_LP_154K_FUN3D.plt"'
 $!VarSet |LFDSVL1| = '"x" "y" "z" "mach"'
 $!SETSTYLEBASE FACTORY
 $!PLOTOPTIONS 
