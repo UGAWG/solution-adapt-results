@@ -7,6 +7,8 @@ lines = IO.readlines(input)
 output = input.sub(/\.tec/,"-cont.tec")
 throw("file subs") unless ( output =~ /cont/i)
 
+# output = File.join('cont-hist',File.basename(output))
+
 File.open(output,'w') do |f|
   n = lines.size
   (n/2).times do |o|
