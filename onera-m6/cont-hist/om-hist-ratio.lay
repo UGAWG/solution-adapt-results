@@ -1,5 +1,5 @@
 #!MC 1200
-$!READDATASET '"onera03-ratio.tec" "onera10-ratio.tec" "onera03.epicICS-ratio.tec" "onera10.epicICS-ratio.tec" "onera03.epicICSM-ratio.tec" "onera10.epicICSM-ratio.tec" "refine-onera03-ratio.tec" "refine-onera10-ratio.tec" "onera03_out_new-ratio.tec" "onera10_out_new-ratio.tec" "onera03-fefloa-ratio.tec" "onera10-fefloa-ratio.tec" "onera03-ratio.tec"'
+$!READDATASET '"onera03-ratio.tec" "onera10-ratio.tec" "onera03.epicICS-ratio.tec" "onera10.epicICS-ratio.tec" "onera03.epicICSM-ratio.tec" "onera10.epicICSM-ratio.tec" "refine-onera03-ratio.tec" "refine-onera10-ratio.tec" "onera03_out_new-ratio.tec" "onera10_out_new-ratio.tec" "onera03-fefloa-ratio.tec" "onera10-fefloa-ratio.tec" "onera03-ratio-omega_h.tec"'
   INITIALPLOTTYPE = XYLINE
 $!DELETELINEMAPS  [1-20]
 $!CREATELINEMAP
