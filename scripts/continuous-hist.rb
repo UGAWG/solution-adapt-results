@@ -4,10 +4,10 @@ input = ARGV[0] || 'sa-m084-a306-fun3d/onera03-ratio.tec'
 
 lines = IO.readlines(input)
 
-output = input.sub(/\.tec/,"-cont.tec")
-throw("file subs") unless ( output =~ /cont/i)
+# output = input.sub(/\.tec/,"-cont.tec")
+output = File.basename(input)
 
-# output = File.join('cont-hist',File.basename(output))
+throw("won't write over input") if ( input == output)
 
 File.open(output,'w') do |f|
   n = lines.size
