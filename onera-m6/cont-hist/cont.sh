@@ -22,4 +22,22 @@ mv onera03-ratio.tec onera03-ratio-omega_h.tec
 ../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/fefloa/onera10-fefloa-ratio.tec
 
 
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/omega_h/onera03-qual.tec
+
+mv onera03-qual.tec onera03-qual-omega_h.tec
+
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/onera03-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/onera10-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/epic/onera03.epicICS-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/epic/onera10.epicICS-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/epic/onera03.epicICSM-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/epic/onera10.epicICSM-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/refine/refine-onera03-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/refine/refine-onera10-qual.tec
+../../scripts/continuous-hist.rb ../pragmatic/onera03_out_new-qual.tec
+../../scripts/continuous-hist.rb ../pragmatic/onera10_out_new-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/fefloa/onera03-fefloa-qual.tec
+../../scripts/continuous-hist.rb ../sa-m084-a306-fun3d/fefloa/onera10-fefloa-qual.tec
+
+
 
