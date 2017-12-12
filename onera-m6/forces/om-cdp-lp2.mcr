@@ -1,5 +1,5 @@
 #!MC 1410
-$!OPENLAYOUT  "om-cdp.lay"
+$!OPENLAYOUT  "om-cdp-last.lay"
 
 $!ACTIVELINEMAPS = [1-5,6,11,14]
 
